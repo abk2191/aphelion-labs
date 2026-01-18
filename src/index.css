@@ -317,16 +317,16 @@ html {
 
   .intro-card p {
     font-size: 14px;
-    text-align: justify;
-    text-align-last: left; /* Last line aligns left (not justified) */
+    /* text-align: justify;
+    text-align-last: left; 
     hyphens: auto;
     word-spacing: normal;
     letter-spacing: normal;
     line-height: 1.5;
 
-    /* Better word breaking for long URLs/words */
+    
     overflow-wrap: break-word;
     word-wrap: break-word;
-    word-break: break-word;
+    word-break: break-word; */
   }
 }
