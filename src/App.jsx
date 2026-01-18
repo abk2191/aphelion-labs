@@ -101,8 +101,8 @@ function App() {
       )}
       {/* Navbar and Sidebar Logic Ends */}
 
-      <div className="intro-card-div">
-        <div className="intro-card">
+      <div className="page-card-div">
+        <div className="page-card">
           <h2>Welcome to Aphelion Labs.</h2>
           <p>
             Aphelion Labs is a forward-thinking design and development studio
@@ -124,9 +124,9 @@ function App() {
           </p>
         </div>
       </div>
-      <div className="intro-card-div">
-        <div className="intro-card">
-          <h2>⚙️ Technologies</h2>
+      <div className="page-card-div">
+        <div className="page-card">
+          <h2 style={{ color: "rgb(61, 211, 61)" }}>⚙️ Technologies</h2>
           <p>
             Aphelion Labs is a forward-thinking design and development studio
             dedicated to crafting seamless digital experiences through intuitive

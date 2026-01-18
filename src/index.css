@@ -266,7 +266,7 @@ html {
   line-height: 1.6;
 }
 
-.intro-card-div {
+.page-card-div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -275,7 +275,7 @@ html {
   animation-duration: 1s; /* don't forget to set a duration! */
 }
 
-.intro-card {
+.page-card {
   height: 380px;
   max-width: 640px;
   width: 100%;
@@ -284,13 +284,13 @@ html {
   padding: 20px;
 }
 
-.intro-card h2 {
+.page-card h2 {
   font-family: "Inter", sans-serif;
   color: midnightblue;
   font-size: 18px;
 }
 
-.intro-card p {
+.page-card p {
   font-family: "Montserrat", sans-serif;
   font-size: 17px;
   line-height: 1.7;
@@ -303,7 +303,7 @@ html {
   margin: 0;
 }
 
-.intro-card p + p {
+.page-card p + p {
   margin-top: 0.9em; /* adjust: 0.75–1.2em */
 }
 
@@ -325,13 +325,13 @@ html {
     font-size: 12px;
   }
 
-  .intro-card {
+  .page-card {
     height: 410px;
     max-width: 320px; /* or 300px if you want tighter */
     padding: 18px;
   }
 
-  .intro-card p {
+  .page-card p {
     font-size: 14px;
     line-height: 1.6;
   }
