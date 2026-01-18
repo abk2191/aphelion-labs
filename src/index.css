@@ -253,6 +253,17 @@ html {
   line-height: 1.6;
 }
 
+.placeholder-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  color: #000033;
+  line-height: 1.6;
+}
+
 @media (max-width: 768px) {
   /* Styles for screens up to 768px wide (mobile) */
   .brand-name h3 {

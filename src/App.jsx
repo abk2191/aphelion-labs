@@ -72,35 +72,40 @@ function App() {
   }, [shouldRenderSidebar, isSidebarOpen]);
 
   return (
-    <div>
-      {/* Navbar and Sidebar Logic Starts */}
-      <div className="navbar">
-        <button
-          ref={hamburgerRef}
-          className={`hamburger ${isSidebarOpen ? "open" : ""}`}
-          onClick={toggleSidebar}
-          aria-label={isSidebarOpen ? "Close menu" : "Open menu"}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+    <>
+      <div>
+        {/* Navbar and Sidebar Logic Starts */}
+        <div className="navbar">
+          <button
+            ref={hamburgerRef}
+            className={`hamburger ${isSidebarOpen ? "open" : ""}`}
+            onClick={toggleSidebar}
+            aria-label={isSidebarOpen ? "Close menu" : "Open menu"}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-        <div className="brand-name">
-          <h3>
-            <i class="fa-solid fa-flask"></i> Aphelion Labs.
-          </h3>
+          <div className="brand-name">
+            <h3>
+              <i class="fa-solid fa-flask"></i> Aphelion Labs.
+            </h3>
+          </div>
         </div>
+
+        {/* Conditionally render sidebar */}
+        {shouldRenderSidebar && (
+          <div ref={sidebarRef} className="sidebar">
+            <div className="sliding-div-container item-style"></div>
+          </div>
+        )}
+        {/* Navbar and Sidebar Logic Ends */}
       </div>
-
-      {/* Conditionally render sidebar */}
-      {shouldRenderSidebar && (
-        <div ref={sidebarRef} className="sidebar">
-          <div className="sliding-div-container item-style"></div>
-        </div>
-      )}
-      {/* Navbar and Sidebar Logic Ends */}
-    </div>
+      <div className="placeholder-text">
+        <h1>The UI/UX Lab 🧪</h1>
+      </div>
+    </>
   );
 }
 
