@@ -338,6 +338,7 @@ html {
 
   .intro-card p {
     font-size: 14px;
+    color: gray;
     /* text-align: justify;
     text-align-last: left; 
     hyphens: auto;
