@@ -264,6 +264,30 @@ html {
   line-height: 1.6;
 }
 
+.intro-card-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.intro-card {
+  height: 450px;
+  width: 1000px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  font-family: "Inter", sans-serif;
+  color: rgb(13, 13, 72);
+  padding: 20px;
+}
+
+.intro-card p {
+  line-height: 1.6;
+  text-align: justify;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+}
+
 @media (max-width: 768px) {
   /* Styles for screens up to 768px wide (mobile) */
   .brand-name h3 {
@@ -280,5 +304,10 @@ html {
 
   .placeholder-text {
     font-size: 12px;
+  }
+
+  .intro-card {
+    height: 500px;
+    width: 360px;
   }
 }

@@ -102,6 +102,22 @@ function App() {
         )}
         {/* Navbar and Sidebar Logic Ends */}
       </div>
+      <div className="intro-card-div">
+        <div className="intro-card">
+          <h2>Welcome to Aphelion Labs</h2>
+          <p>
+            Aphelion Labs is a forward-thinking design and development studio
+            dedicated to crafting seamless digital experiences through intuitive
+            user interfaces. We specialize in building functional, aesthetic
+            applications that prioritize clarity and user engagement across
+            various platforms. Every product we build reflects our commitment to
+            clean design and practical innovation, ensuring that complex tasks
+            become simple for our users. At Aphelion Labs, we are constantly
+            pushing the boundaries of interface design to define the next
+            generation of digital utility.
+          </p>
+        </div>
+      </div>
     </>
   );
 }
