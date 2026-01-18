@@ -142,6 +142,17 @@ function App() {
                 <p>HTML 5</p>
               </div>
             </div>
+
+            <div className="tech-stack">
+              <div style={{ color: "red" }}>
+                <i class="fa-brands fa-git-alt"></i>
+                <p style={{ textAlign: "center" }}>Git</p>
+              </div>
+              <div style={{ color: "navy" }}>
+                <i class="fa-solid fa-globe"></i>
+                <p>Full Stack</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
