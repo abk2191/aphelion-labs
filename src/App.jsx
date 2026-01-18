@@ -103,7 +103,7 @@ function App() {
 
       <div className="page-card-div">
         <div className="page-card">
-          <h2>Welcome to Aphelion Labs.</h2>
+          <h2>👋 Welcome to Aphelion Labs.</h2>
           <p>
             Aphelion Labs is a forward-thinking design and development studio
             dedicated to crafting seamless digital experiences through intuitive
@@ -126,19 +126,21 @@ function App() {
       </div>
       <div className="page-card-div">
         <div className="page-card">
-          <h2 style={{ color: "rgb(61, 211, 61)" }}>⚙️ Technologies</h2>
-          <div className="tech-stack">
-            <div style={{ color: "cyan" }}>
-              <i class="fa-brands fa-react"></i>
-              <p>React.js</p>
-            </div>
-            <div style={{ color: "gold" }}>
-              <i class="fa-brands fa-js"></i>
-              <p>Javascript</p>
-            </div>
-            <div style={{ color: "orange" }}>
-              <i class="fa-brands fa-html5"></i>
-              <p>HTML 5</p>
+          <h2>⚙️ Technologies</h2>
+          <div className="tech-stack-div">
+            <div className="tech-stack">
+              <div style={{ color: "cyan" }}>
+                <i class="fa-brands fa-react"></i>
+                <p>React.js</p>
+              </div>
+              <div style={{ color: "gold" }}>
+                <i class="fa-brands fa-js"></i>
+                <p>Javascript</p>
+              </div>
+              <div style={{ color: "orange" }}>
+                <i class="fa-brands fa-html5"></i>
+                <p>HTML 5</p>
+              </div>
             </div>
           </div>
         </div>
