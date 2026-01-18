@@ -27,7 +27,7 @@
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #000033;
+  background-color: gold;
   border-radius: 4px;
   transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   transform-origin: center;
@@ -39,14 +39,14 @@
 } */
 
 /* .hamburger:hover span {
-  background-color: #000033;
-  box-shadow: 0 0 6px #000033;
+  background-color: gold;
+  box-shadow: 0 0 6px gold;
 } */
 
 /* X Transformation when open */
 .hamburger.open span:nth-child(1) {
   transform: translateY(13px) rotate(45deg);
-  background-color: #000033;
+  background-color: gold;
 }
 
 .hamburger.open span:nth-child(2) {
@@ -56,7 +56,7 @@
 
 .hamburger.open span:nth-child(3) {
   transform: translateY(-13px) rotate(-45deg);
-  background-color: #000033;
+  background-color: gold;
 }
 
 /* Hover effect when open */
@@ -249,7 +249,7 @@ html {
 .brand-name h3 {
   font-family: "Inter", sans-serif;
   font-size: 30px;
-  color: #000033;
+  color: gold;
   line-height: 1.6;
 }
 
@@ -272,8 +272,9 @@ html {
 }
 
 .intro-card {
-  height: 450px;
-  width: 1000px;
+  height: 380px;
+  max-width: 640px;
+  width: 100%;
   text-align: center;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   padding: 20px;
@@ -281,33 +282,26 @@ html {
 
 .intro-card h2 {
   font-family: "Inter", sans-serif;
-  color: rgb(13, 13, 72);
+  color: midnightblue;
   font-size: 18px;
 }
 
 .intro-card p {
-  max-width: 65ch;
-  margin: 0 auto;
-
-  font-family:
-    "Inter",
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 17px;
   line-height: 1.7;
-
-  color: rgba(13, 13, 72, 0.85);
-
+  color: #32327a;
   text-align: left;
-
   letter-spacing: 0.01em;
-
   overflow-wrap: break-word;
-
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.intro-card p + p {
+  margin-top: 0.9em; /* adjust: 0.75–1.2em */
 }
 
 @media (max-width: 768px) {
@@ -330,14 +324,12 @@ html {
 
   .intro-card {
     height: 410px;
-    width: 300px;
+    max-width: 320px; /* or 300px if you want tighter */
+    padding: 18px;
   }
 
   .intro-card p {
     font-size: 14px;
-    max-width: 100%;
-    padding-inline: 16px;
-
     line-height: 1.6;
   }
 }

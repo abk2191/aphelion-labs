@@ -104,17 +104,24 @@ function App() {
       </div>
       <div className="intro-card-div">
         <div className="intro-card">
-          <h2>Welcome to Aphelion Labs</h2>
+          <h2>Welcome to Aphelion Labs.</h2>
           <p>
             Aphelion Labs is a forward-thinking design and development studio
             dedicated to crafting seamless digital experiences through intuitive
-            user interfaces. We specialize in building functional, aesthetic
-            applications that prioritize clarity and user engagement across
-            various platforms. Every product we build reflects our commitment to
-            clean design and practical innovation, ensuring that complex tasks
-            become simple for our users. At Aphelion Labs, we are constantly
-            pushing the boundaries of interface design to define the next
-            generation of digital utility.
+            user interfaces.
+          </p>
+
+          <p>
+            We specialize in building functional, aesthetic applications that
+            prioritize clarity and user engagement across various platforms.
+            Every product we build reflects our commitment to clean design and
+            practical innovation.
+          </p>
+
+          <p>
+            At Aphelion Labs, we are constantly pushing the boundaries of
+            interface design to ensure complex tasks become simple and
+            meaningful for our users.
           </p>
         </div>
       </div>
