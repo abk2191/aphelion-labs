@@ -308,6 +308,10 @@ html {
 
   .intro-card {
     height: 500px;
-    width: 360px;
+    width: 300px;
+  }
+
+  .intro-card p {
+    font-size: 12px;
   }
 }
