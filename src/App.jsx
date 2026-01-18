@@ -127,6 +127,10 @@ function App() {
       <div className="page-card-div">
         <div className="page-card">
           <h2>⚙️ Technologies</h2>
+          <p>
+            We work with a focused set of modern web technologies chosen for
+            their reliability and clarity and performance.
+          </p>
           <div className="tech-stack-div">
             <div className="tech-stack">
               <div style={{ color: "cyan" }}>
