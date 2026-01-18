@@ -296,21 +296,15 @@ html {
     BlinkMacSystemFont,
     sans-serif;
   font-size: 17px;
-  line-height: 1.65;
+  line-height: 1.7;
 
   color: rgba(13, 13, 72, 0.85);
 
-  text-align: justify;
-  text-align-last: left;
+  text-align: left;
 
   letter-spacing: 0.01em;
-  word-spacing: 0.02em;
-
-  hyphens: none;
-  -webkit-hyphens: none;
 
   overflow-wrap: break-word;
-  word-break: normal;
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -345,11 +339,5 @@ html {
     padding-inline: 16px;
 
     line-height: 1.6;
-
-    letter-spacing: 0.005em;
-    word-spacing: 0.01em;
-
-    text-align: justify;
-    text-align-last: left;
   }
 }
