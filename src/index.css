@@ -254,10 +254,14 @@ html {
 @media (max-width: 768px) {
   /* Styles for screens up to 768px wide (mobile) */
   .brand-name h3 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .sidebar {
-    width: 200px;
+    width: 210px;
+  }
+
+  .hamburger span {
+    width: 80%;
   }
 }
