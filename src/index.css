@@ -285,6 +285,10 @@ html {
   padding: 20px;
 }
 
+.page-card:active {
+  transform: scale(0.99);
+}
+
 .page-card h2 {
   font-family: "Inter", sans-serif;
   color: midnightblue;
