@@ -286,10 +286,31 @@ html {
 }
 
 .intro-card p {
-  line-height: 1.6;
+  max-width: 62ch;
+  margin: 20px auto 0;
+
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+
+  color: rgba(13, 13, 72, 0.85);
+
   text-align: justify;
-  font-size: 18px;
-  font-family: "Inter", sans-serif;
+  text-align-last: left;
+
+  letter-spacing: 0.01em;
+  word-spacing: 0.02em;
+
+  hyphens: auto;
+  -webkit-hyphens: auto;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 @media (max-width: 768px) {
