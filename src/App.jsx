@@ -126,7 +126,7 @@ function App() {
       </div>
       <div className="intro-card-div">
         <div className="intro-card">
-          <h2>Welcome to Aphelion Labs.</h2>
+          <h2>⚙️ Technologies</h2>
           <p>
             Aphelion Labs is a forward-thinking design and development studio
             dedicated to crafting seamless digital experiences through intuitive
