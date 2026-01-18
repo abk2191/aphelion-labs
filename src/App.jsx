@@ -73,34 +73,56 @@ function App() {
 
   return (
     <>
-      <div>
-        {/* Navbar and Sidebar Logic Starts */}
-        <div className="navbar">
-          <button
-            ref={hamburgerRef}
-            className={`hamburger ${isSidebarOpen ? "open" : ""}`}
-            onClick={toggleSidebar}
-            aria-label={isSidebarOpen ? "Close menu" : "Open menu"}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+      {/* Navbar and Sidebar Logic Starts */}
+      <div className="navbar">
+        <button
+          ref={hamburgerRef}
+          className={`hamburger ${isSidebarOpen ? "open" : ""}`}
+          onClick={toggleSidebar}
+          aria-label={isSidebarOpen ? "Close menu" : "Open menu"}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-          <div className="brand-name">
-            <h3>
-              <i class="fa-solid fa-flask"></i> Aphelion Labs.
-            </h3>
-          </div>
+        <div className="brand-name">
+          <h3>
+            <i class="fa-solid fa-flask"></i> Aphelion Labs.
+          </h3>
         </div>
+      </div>
 
-        {/* Conditionally render sidebar */}
-        {shouldRenderSidebar && (
-          <div ref={sidebarRef} className="sidebar">
-            <div className="sliding-div-container item-style"></div>
-          </div>
-        )}
-        {/* Navbar and Sidebar Logic Ends */}
+      {/* Conditionally render sidebar */}
+      {shouldRenderSidebar && (
+        <div ref={sidebarRef} className="sidebar">
+          <div className="sliding-div-container item-style"></div>
+        </div>
+      )}
+      {/* Navbar and Sidebar Logic Ends */}
+
+      <div className="intro-card-div">
+        <div className="intro-card">
+          <h2>Welcome to Aphelion Labs.</h2>
+          <p>
+            Aphelion Labs is a forward-thinking design and development studio
+            dedicated to crafting seamless digital experiences through intuitive
+            user interfaces.
+          </p>
+
+          <p>
+            We specialize in building functional, aesthetic applications that
+            prioritize clarity and user engagement across various platforms.
+            Every product we build reflects our commitment to clean design and
+            practical innovation.
+          </p>
+
+          <p>
+            At Aphelion Labs, we are constantly pushing the boundaries of
+            interface design to ensure complex tasks become simple and
+            meaningful for our users.
+          </p>
+        </div>
       </div>
       <div className="intro-card-div">
         <div className="intro-card">
