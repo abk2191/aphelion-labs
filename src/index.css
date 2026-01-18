@@ -312,7 +312,7 @@ html {
   }
 
   .intro-card p {
-    font-size: 16px;
+    font-size: 13px;
     text-align: justify;
     text-justify: inter-word; /* For better word spacing */
     hyphens: auto; /* Automatically hyphenate long words */
