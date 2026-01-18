@@ -314,10 +314,14 @@ html {
   .intro-card p {
     font-size: 13px;
     text-align: justify;
-    text-justify: inter-word; /* For better word spacing */
-    hyphens: auto; /* Automatically hyphenate long words */
-    word-spacing: -0.05em; /* Compensate for justified spacing */
-    letter-spacing: 0.01em; /* Very subtle letter spacing */
-    line-height: 1.8; /* Good for readability */
+    hyphens: auto;
+    word-spacing: -0.05em;
+    letter-spacing: 0.005em;
+    line-height: 1.7;
+
+    /* Control hyphenation behavior */
+    hyphenate-limit-chars: 6 3 2; /* min-word-length, min-chars-before, min-chars-after */
+    hyphenate-limit-lines: 2; /* Don't hyphenate last 2 lines */
+    hyphenate-limit-zone: 8%; /* Hyphenation zone */
   }
 }
