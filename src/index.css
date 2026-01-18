@@ -318,6 +318,6 @@ html {
     hyphens: auto; /* Automatically hyphenate long words */
     word-spacing: -0.05em; /* Compensate for justified spacing */
     letter-spacing: 0.01em; /* Very subtle letter spacing */
-    line-height: 1.6; /* Good for readability */
+    line-height: 2; /* Good for readability */
   }
 }
