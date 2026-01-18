@@ -276,9 +276,13 @@ html {
   width: 1000px;
   text-align: center;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+
+.intro-card h2 {
   font-family: "Inter", sans-serif;
   color: rgb(13, 13, 72);
-  padding: 20px;
+  font-size: 18px;
 }
 
 .intro-card p {
@@ -314,14 +318,15 @@ html {
   .intro-card p {
     font-size: 14px;
     text-align: justify;
+    text-align-last: left; /* Last line aligns left (not justified) */
     hyphens: auto;
-    word-spacing: -0.05em;
-    letter-spacing: 0.005em;
-    line-height: 1.7;
+    word-spacing: normal;
+    letter-spacing: normal;
+    line-height: 1.5;
 
-    /* Control hyphenation behavior */
-    hyphenate-limit-chars: 6 3 2; /* min-word-length, min-chars-before, min-chars-after */
-    hyphenate-limit-lines: 2; /* Don't hyphenate last 2 lines */
-    hyphenate-limit-zone: 8%; /* Hyphenation zone */
+    /* Better word breaking for long URLs/words */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
   }
 }
