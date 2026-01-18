@@ -103,7 +103,7 @@ function App() {
         {/* Navbar and Sidebar Logic Ends */}
       </div>
       <div className="placeholder-text">
-        <h1>The UI/UX Lab 🧪</h1>
+        <h1>The UI Lab 🧪</h1>
       </div>
     </>
   );

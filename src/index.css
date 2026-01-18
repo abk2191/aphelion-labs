@@ -259,8 +259,8 @@ html {
   align-items: center;
   justify-content: center;
   font-family: "Inter", sans-serif;
-  font-size: 18px;
-  color: #000033;
+  font-size: 14px;
+  color: black;
   line-height: 1.6;
 }
 
@@ -276,5 +276,9 @@ html {
 
   .hamburger span {
     width: 80%;
+  }
+
+  .placeholder-text {
+    font-size: 12px;
   }
 }
