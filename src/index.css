@@ -255,6 +255,17 @@ html {
   line-height: 1.6;
 }
 
+.brand-name-sidebar {
+  padding: 10px;
+}
+
+.brand-name-sidebar h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: midnightblue;
+  line-height: 1.6;
+}
+
 .placeholder-text {
   width: 100%;
   display: flex;
@@ -328,6 +339,20 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.footer {
+  height: 140px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  color: midnightblue;
 }
 
 @media (max-width: 768px) {

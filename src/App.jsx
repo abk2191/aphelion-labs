@@ -96,6 +96,11 @@ function App() {
       {/* Conditionally render sidebar */}
       {shouldRenderSidebar && (
         <div ref={sidebarRef} className="sidebar">
+          <div className="brand-name-sidebar">
+            <h3>
+              <i class="fa-solid fa-flask"></i> Aphelion Labs.
+            </h3>
+          </div>
           <div className="sliding-div-container item-style"></div>
         </div>
       )}
@@ -124,6 +129,7 @@ function App() {
           </p>
         </div>
       </div>
+
       <div className="page-card-div">
         <div className="page-card">
           <h2>⚙️ Technologies</h2>
@@ -159,6 +165,26 @@ function App() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="page-card-div">
+        <div className="page-card">
+          <h2> 💭 Our vision</h2>
+          <p>
+            "We exist at the heart of the user experience. What began as a
+            passion for beautiful UI has evolved into a mission to serve. Driven
+            by a lifelong devotion to the art of the interface, we have found
+            our purpose in the intersection of beauty and utility. We are
+            dedicated to creating intuitive, high-impact interfaces that empower
+            millions of people globally. For us, great design isn't a
+            luxury—it’s our contribution to the world one seamless interaction
+            at a time." - Aphelion Labs.
+          </p>
+        </div>
+      </div>
+
+      <div className="footer">
+        <p>&copy; Copyright All Rights Reserved 2025.</p>
       </div>
     </>
   );
