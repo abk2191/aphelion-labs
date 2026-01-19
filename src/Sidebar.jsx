@@ -94,8 +94,8 @@ function Sidebar({
 
           <div className="dropdown" style={{ color: "midnightblue" }}>
             <div className={`items ${menuVisibility === "ui" ? "open" : ""}`}>
-              <p>Andromeda</p>
-              <p>Proxima Calculator</p>
+              <p>👉 Andromeda</p>
+              <p>👉 Proxima Calculator</p>
             </div>
           </div>
 
@@ -117,7 +117,7 @@ function Sidebar({
             <div
               className={`items ${menuVisibility === "contact" ? "open" : ""}`}
             >
-              <p>Email</p>
+              <p>📨 Email</p>
               <p>LinkedIn</p>
             </div>
           </div>
