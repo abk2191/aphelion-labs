@@ -82,7 +82,9 @@ function Sidebar({
 
         <div className="sidebar-items">
           <div className="menu-item">
-            <p style={{ color: "midnightblue" }}>✨️ The UI Lab 🧪</p>
+            <p style={{ color: "midnightblue" }}>
+              ✨️&nbsp;&nbsp; The UI Lab 🧪
+            </p>
             <button className="toggle-button" onClick={() => toggleMenu("ui")}>
               {menuVisibility === "ui" ? (
                 <i class="fa-solid fa-angle-up"></i>
@@ -100,7 +102,7 @@ function Sidebar({
           </div>
 
           <div className="menu-item">
-            <p style={{ color: "midnightblue" }}>📧 Contact</p>
+            <p style={{ color: "midnightblue" }}>📧&nbsp;&nbsp; Contact</p>
             <button
               className="toggle-button"
               onClick={() => toggleMenu("contact")}
