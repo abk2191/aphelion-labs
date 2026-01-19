@@ -8,6 +8,9 @@ function Sidebar({
 }) {
   const sidebarRef = useRef(null);
 
+  //****************************************************************************/
+  //****************************************************************************/
+
   // Handle animation when closing via state change (hamburger button)
   useEffect(() => {
     if (sidebarRef.current) {
@@ -59,7 +62,8 @@ function Sidebar({
     };
   }, [isSidebarOpen, onClose, hamburgerRef]);
 
-  if (!shouldRenderSidebar) return null;
+  //****************************************************************************/
+  //****************************************************************************/
 
   return (
     <>
