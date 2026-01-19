@@ -7,12 +7,18 @@
 .banner {
   width: 100%;
   height: 350px;
+  background-image: url("/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* 👈 full image visible */
+  background-color: #0b1e3a; /* fills empty space nicely */
 }
 
 .banner img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* 👈 key change */
+  object-position: center;
 }
 
 /* Hamburger Menu Styles */
