@@ -146,6 +146,10 @@
   cursor: pointer;
 }
 
+.toggle-button i {
+  color: gray;
+}
+
 .menu-item {
   display: flex;
   align-items: center;
