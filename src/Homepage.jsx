@@ -1,6 +1,13 @@
 function Homepage() {
   return (
     <>
+      <div className="banner">
+        <img
+          src="./banner.jpg"
+          alt=""
+          // style={{ height: "200px", width: "200px" }}
+        />
+      </div>
       <div className="page-card-div">
         <div className="page-card">
           <h2>👋 Welcome to Aphelion Labs.</h2>
@@ -24,7 +31,6 @@ function Homepage() {
           </p>
         </div>
       </div>
-
       <div className="page-card-div">
         <div className="page-card">
           <h2>⚙️ Technologies</h2>
@@ -61,7 +67,6 @@ function Homepage() {
           </div>
         </div>
       </div>
-
       <div className="page-card-div">
         <div className="page-card">
           <h2> 💭 Our vision</h2>
