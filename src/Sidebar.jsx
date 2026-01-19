@@ -73,7 +73,11 @@ function Sidebar({
             <i className="fa-solid fa-flask"></i> Aphelion Labs.
           </h3>
         </div>
-        <div className="sliding-div-container item-style"></div>
+
+        <div className="sidebar-items">
+          <p style={{ color: "midnightblue" }}>The UI Lab 🧪</p>
+          <p style={{ color: "midnightblue" }}>Contact 📧</p>
+        </div>
       </div>
     </>
   );

@@ -92,6 +92,19 @@
   -webkit-overflow-scrolling: touch;
 }
 
+.sidebar-items {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+.sidebar-items p {
+  font-size: 25px;
+}
+
 /* Open animation */
 .sidebar.sidebar-open {
   transform: translateX(0);
