@@ -74,7 +74,7 @@
   height: 100vh;
   background: white;
   color: white;
-  z-index: 999;
+  z-index: 20000;
   /* Initial state - hidden */
   transform: translateX(-100%);
   opacity: 0;
@@ -225,7 +225,7 @@
 
 .navbar {
   position: fixed; /* 👈 key change */
-
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -241,7 +241,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 .brand-name {
@@ -295,6 +295,7 @@ html {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   padding: 20px;
   transition: transform 0.3s ease;
+  background-color: white;
 }
 
 .page-card:active {
@@ -387,5 +388,9 @@ html {
   .tech-stack {
     gap: 40px;
     font-size: 50px;
+  }
+
+  .footer {
+    height: 100px;
   }
 }
