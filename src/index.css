@@ -97,12 +97,12 @@
   flex-direction: column;
   text-align: left;
   padding: 20px;
-  font-family: "Inter", sans-serif;
-  font-weight: bold;
-  gap: 15px;
+  gap: 25px;
 }
 
 .sidebar-items p {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
   font-size: 20px;
   margin: 0;
   padding: 0;
@@ -114,10 +114,11 @@
 }
 
 .items {
-  margin-left: 40px;
+  margin-left: 25px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
+
   overflow: hidden;
   max-height: 0;
   opacity: 0;
@@ -126,6 +127,11 @@
     max-height 0.35s ease,
     opacity 0.25s ease,
     transform 0.25s ease;
+}
+
+.items p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
 }
 
 .items.open {
