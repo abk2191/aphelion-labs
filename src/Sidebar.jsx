@@ -118,7 +118,7 @@ function Sidebar({
               className={`items ${menuVisibility === "contact" ? "open" : ""}`}
             >
               <p>📨 Email</p>
-              <p>LinkedIn</p>
+              <p>🌐 LinkedIn</p>
             </div>
           </div>
         </div>
