@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import Homepage from "./Homepage";
@@ -36,6 +36,18 @@ function App() {
       setShouldRenderSidebar(false);
     }, 300);
   };
+
+  useEffect(() => {
+    if (isSidebarOpen && window.innerWidth <= 768) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isSidebarOpen]);
 
   // ************************************************************************
   // ************************************************************************

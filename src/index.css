@@ -86,7 +86,11 @@
   animation-duration: 0.8s; /* don't forget to set a duration! */
   border-top: 1px solid rgb(235, 233, 233);
   border-right: 1px solid rgb(235, 233, 233);
-  touch-action: pan-y;
+  overflow-y: auto;
+
+  /* 🔑 VERY IMPORTANT */
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Open animation */
