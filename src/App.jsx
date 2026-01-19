@@ -36,7 +36,6 @@ function App() {
   //Close Sidebar Function
   const handleCloseSidebar = () => {
     setIsSidebarOpen(false);
-    setIsSidebarActive(false);
     setTimeout(() => {
       setShouldRenderSidebar(false);
     }, 300);
