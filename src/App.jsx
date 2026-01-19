@@ -8,13 +8,10 @@ function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [shouldRenderSidebar, setShouldRenderSidebar] = useState(false);
   const hamburgerRef = useRef(null);
-  const [isSidebarActive, setIsSidebarActive] = useState(false);
-  const [showWrapperTrigger, setShowWrapperTrigger] = useState(0);
 
   // Toggle Sidebar Function
   const toggleSidebar = () => {
     if (!isSidebarOpen) {
-      setShowWrapperTrigger((prev) => prev + 1);
       setShouldRenderSidebar(true);
       setTimeout(() => {
         setIsSidebarOpen(true);
@@ -61,8 +58,6 @@ function App() {
         shouldRenderSidebar={shouldRenderSidebar}
         onClose={handleCloseSidebar}
         hamburgerRef={hamburgerRef}
-        isSidebarActive={isSidebarActive}
-        showWrapperTrigger={showWrapperTrigger}
       />
       <Homepage />
       <Footer />
