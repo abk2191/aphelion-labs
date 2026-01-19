@@ -84,11 +84,11 @@
   margin-top: 81px;
   animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 0.5s; /* don't forget to set a duration! */
-  border-right: 1px solid rgb(235, 233, 233);
+  /* border-right: 1px solid rgb(235, 233, 233); */
 
-  /* box-shadow:
+  box-shadow:
     1px 0 6px rgba(0, 0, 0, 0.06),
-    6px 0 20px rgba(0, 0, 0, 0.04); */
+    6px 0 20px rgba(0, 0, 0, 0.04);
 }
 
 /* Open animation */
