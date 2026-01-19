@@ -82,8 +82,7 @@
     transform 0.3s ease,
     opacity 0.3s ease;
   margin-top: 81px;
-  animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 0.8s; /* don't forget to set a duration! */
+
   border-top: 1px solid rgb(235, 233, 233);
   border-right: 1px solid rgb(235, 233, 233);
   overflow-y: auto;
@@ -91,6 +90,11 @@
   /* 🔑 VERY IMPORTANT */
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
+}
+
+.sidebar-inner {
+  animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 0.8s; /* don't forget to set a duration! */
 }
 
 /* Open animation */

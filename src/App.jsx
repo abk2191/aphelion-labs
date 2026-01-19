@@ -37,6 +37,7 @@ function App() {
     }, 300);
   };
 
+  //Lock body scroll ONLY on mobile + only when sidebar is open
   useEffect(() => {
     if (isSidebarOpen && window.innerWidth <= 768) {
       document.body.style.overflow = "hidden";

@@ -63,12 +63,14 @@ function Sidebar({
 
   return (
     <div ref={sidebarRef} className="sidebar">
-      <div className="brand-name-sidebar">
-        <h3>
-          <i className="fa-solid fa-flask"></i> Aphelion Labs.
-        </h3>
+      <div className="sidebar-inner">
+        <div className="brand-name-sidebar">
+          <h3>
+            <i className="fa-solid fa-flask"></i> Aphelion Labs.
+          </h3>
+        </div>
+        <div className="sliding-div-container item-style"></div>
       </div>
-      <div className="sliding-div-container item-style"></div>
     </div>
   );
 }
