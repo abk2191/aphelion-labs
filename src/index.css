@@ -114,11 +114,11 @@
 }
 
 .items {
-  margin-left: 25px;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;
-
+  width: 100%;
   overflow: hidden;
   max-height: 0;
   opacity: 0;
@@ -434,7 +434,7 @@ html {
   }
 
   .sidebar {
-    width: 230px;
+    width: 250px;
   }
 
   .hamburger span {
