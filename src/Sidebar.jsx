@@ -8,6 +8,8 @@ function Sidebar({
 }) {
   const sidebarRef = useRef(null);
 
+  const [menuVisibility, setMenuVisibility] = useState(null);
+
   //****************************************************************************/
   //****************************************************************************/
 
@@ -62,6 +64,10 @@ function Sidebar({
     };
   }, [isSidebarOpen, onClose, hamburgerRef]);
 
+  function toggleMenu(menuName) {
+    setMenuVisibility((prev) => (prev === menuName ? null : menuName));
+  }
+
   //****************************************************************************/
   //****************************************************************************/
 
@@ -75,8 +81,46 @@ function Sidebar({
         </div>
 
         <div className="sidebar-items">
-          <p style={{ color: "midnightblue" }}>The UI Lab 🧪</p>
-          <p style={{ color: "midnightblue" }}>Contact 📧</p>
+          <div className="menu-item">
+            <p style={{ color: "midnightblue" }}>✨️ The UI Lab 🧪</p>
+            <button className="toggle-button" onClick={() => toggleMenu("ui")}>
+              {menuVisibility === "ui" ? (
+                <i class="fa-solid fa-angle-up"></i>
+              ) : (
+                <i class="fa-solid fa-angle-down"></i>
+              )}
+            </button>
+          </div>
+
+          <div className="dropdown" style={{ color: "midnightblue" }}>
+            <div className={`items ${menuVisibility === "ui" ? "open" : ""}`}>
+              <p>Andromeda</p>
+              <p>Proxima Calculator</p>
+            </div>
+          </div>
+
+          <div className="menu-item">
+            <p style={{ color: "midnightblue" }}>✨️ Contact 📧</p>
+            <button
+              className="toggle-button"
+              onClick={() => toggleMenu("contact")}
+            >
+              {menuVisibility === "contact" ? (
+                <i className="fa-solid fa-angle-up"></i>
+              ) : (
+                <i className="fa-solid fa-angle-down"></i>
+              )}
+            </button>
+          </div>
+
+          <div className="dropdown" style={{ color: "midnightblue" }}>
+            <div
+              className={`items ${menuVisibility === "contact" ? "open" : ""}`}
+            >
+              <p>Email</p>
+              <p>LinkedIn</p>
+            </div>
+          </div>
         </div>
       </div>
     </>
