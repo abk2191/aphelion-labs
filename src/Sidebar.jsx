@@ -21,7 +21,7 @@ function Sidebar({
     const timer = setTimeout(() => {
       setIsVisible(true);
       console.log("Triggerred");
-    }, 200);
+    }, 300);
 
     return () => clearTimeout(timer);
   }, [showWrapperTrigger, isSidebarOpen]);
