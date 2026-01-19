@@ -8,19 +8,17 @@ function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [shouldRenderSidebar, setShouldRenderSidebar] = useState(false);
   const hamburgerRef = useRef(null);
+  const [isSidebarActive, setIsSidebarActive] = useState(false);
+  const [showWrapperTrigger, setShowWrapperTrigger] = useState(0);
 
-  // ************************************************************************
-  // ************************************************************************
-  // ************************************************************************
-  // ************************************************************************
-
-  // Toggle Sidebar Function*
+  // Toggle Sidebar Function
   const toggleSidebar = () => {
     if (!isSidebarOpen) {
+      setShowWrapperTrigger((prev) => prev + 1);
       setShouldRenderSidebar(true);
       setTimeout(() => {
         setIsSidebarOpen(true);
-      }, 10);
+      }, 10); // Initial delay to ensure DOM is ready
     } else {
       setIsSidebarOpen(false);
       setTimeout(() => {
@@ -32,6 +30,7 @@ function App() {
   //Close Sidebar Function
   const handleCloseSidebar = () => {
     setIsSidebarOpen(false);
+    setIsSidebarActive(false);
     setTimeout(() => {
       setShouldRenderSidebar(false);
     }, 300);
@@ -50,11 +49,6 @@ function App() {
     };
   }, [isSidebarOpen]);
 
-  // ************************************************************************
-  // ************************************************************************
-  // ************************************************************************
-  // ************************************************************************
-
   return (
     <>
       <Navbar
@@ -67,6 +61,8 @@ function App() {
         shouldRenderSidebar={shouldRenderSidebar}
         onClose={handleCloseSidebar}
         hamburgerRef={hamburgerRef}
+        isSidebarActive={isSidebarActive}
+        showWrapperTrigger={showWrapperTrigger}
       />
       <Homepage />
       <Footer />

@@ -1,12 +1,30 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 
 function Sidebar({
   isSidebarOpen,
   shouldRenderSidebar,
   onClose,
   hamburgerRef,
+  isSidebarActive,
+  showWrapperTrigger,
 }) {
   const sidebarRef = useRef(null);
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    if (!isSidebarOpen) {
+      setIsVisible(false); // 🔑 reset on close
+      return;
+    }
+
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+      console.log("Triggerred");
+    }, 200);
+
+    return () => clearTimeout(timer);
+  }, [showWrapperTrigger, isSidebarOpen]);
 
   // Handle animation when closing via state change (hamburger button)
   useEffect(() => {
@@ -62,16 +80,19 @@ function Sidebar({
   if (!shouldRenderSidebar) return null;
 
   return (
-    <div ref={sidebarRef} className="sidebar">
-      <div className="sidebar-inner">
-        <div className="brand-name-sidebar">
-          <h3>
-            <i className="fa-solid fa-flask"></i> Aphelion Labs.
-          </h3>
+    <>
+      {isVisible && <div className="sidebar-wrapper"></div>}
+      <div ref={sidebarRef} className="sidebar">
+        <div className="sidebar-inner">
+          <div className="brand-name-sidebar">
+            <h3>
+              <i className="fa-solid fa-flask"></i> Aphelion Labs.
+            </h3>
+          </div>
+          <div className="sliding-div-container item-style"></div>
         </div>
-        <div className="sliding-div-container item-style"></div>
       </div>
-    </div>
+    </>
   );
 }
 
