@@ -489,4 +489,8 @@ html {
   .banner {
     height: 200px;
   }
+
+  .items p {
+    font-size: 16px !important;
+  }
 }
