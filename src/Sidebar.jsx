@@ -100,7 +100,7 @@ function Sidebar({
           </div>
 
           <div className="menu-item">
-            <p style={{ color: "midnightblue" }}>✨️ Contact 📧</p>
+            <p style={{ color: "midnightblue" }}>📧 Contact</p>
             <button
               className="toggle-button"
               onClick={() => toggleMenu("contact")}
