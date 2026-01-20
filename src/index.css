@@ -566,6 +566,10 @@ html {
   justify-content: center;
 }
 
+.margin-top-10 {
+  margin-top: 30px;
+}
+
 @media (max-width: 768px) {
   /* Styles for screens up to 768px wide (mobile) */
   .brand-name h3 {
@@ -586,7 +590,7 @@ html {
 
   .page-card {
     height: 410px;
-    max-width: 320px; /* or 300px if you want tighter */
+    max-width: 300px; /* or 300px if you want tighter */
     padding: 18px;
   }
 
