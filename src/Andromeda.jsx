@@ -16,7 +16,6 @@ function Andromeda() {
               cognitive overload.
             </p>
             <br />
-            <br />
             <p>
               With a modern, intuitive interface, Andromeda is built to be fast
               and deeply respectful of your time. It is our goal to support
