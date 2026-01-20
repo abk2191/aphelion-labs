@@ -486,15 +486,32 @@ html {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  gap: 20px;
 }
 
-.andromeda-screenshot-todo {
+.andromeda-screenshot-img {
   width: 20%;
-  aspect-ratio: 9 / 19.5; /* approx mobile screenshot ratio */
-  background-image: url("/andromeda-todo.jpg");
-  background-size: contain; /* IMPORTANT */
+  height: auto;
+  display: block;
+}
+
+.andromeda-screenshot-notes {
+  width: 20%;
+  aspect-ratio: 9 / 19.5;
+  background-image: url("/andromeda-notes-one.jpg");
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.andromeda-screenshot-notes-open {
+  width: 20%;
+  aspect-ratio: 9 / 19.5;
+  background-image: url("/andromeda-notes-two.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
 }
 
 .andromeda-description p {
@@ -569,8 +586,12 @@ html {
     padding: 20px;
   }
 
-  .andromeda-screenshot-todo {
-    width: 60%;
+  .andromeda-screenshot-notes {
+    width: 35%;
+  }
+
+  .andromeda-screenshot-notes-open {
+    width: 35%;
   }
 
   .andromeda-description p {

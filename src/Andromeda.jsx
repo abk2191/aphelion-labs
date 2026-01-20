@@ -32,7 +32,8 @@ function Andromeda() {
         </div>
 
         <div className="andromeda-screenshot-wrapper">
-          <div className="andromeda-screenshot-todo"></div>
+          <div className="andromeda-screenshot-notes"></div>
+          <div className="andromeda-screenshot-notes-open"></div>
         </div>
       </div>
     </>
