@@ -10,9 +10,10 @@ function Andromeda() {
           <div className="andromeda-description">
             <p>
               Andromeda is a thoughtful productivity space designed to help you
-              find clarity and act with intention. We’ve removed the typical
-              digital noise and distractions, offering you a quiet environment
-              to plan and stay focused—free from cognitive overload.
+              find clarity and act with intention. <br /> <br />
+              We’ve removed the typical digital noise and distractions, offering
+              you a quiet environment to plan and stay focused—free from
+              cognitive overload.
             </p>
             <br />
             <br />
