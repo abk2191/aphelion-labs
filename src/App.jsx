@@ -1,8 +1,10 @@
 import { useState, useRef, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import Homepage from "./Homepage";
 import Footer from "./Footer";
+import Andromeda from "./Andromeda";
 
 function App() {
   //****************************************************************************/
@@ -59,21 +61,28 @@ function App() {
   //****************************************************************************/
 
   return (
-    <>
-      <Navbar
-        isSidebarOpen={isSidebarOpen}
-        toggleSidebar={toggleSidebar}
-        hamburgerRef={hamburgerRef}
-      />
-      <Sidebar
-        isSidebarOpen={isSidebarOpen}
-        shouldRenderSidebar={shouldRenderSidebar}
-        onClose={handleCloseSidebar}
-        hamburgerRef={hamburgerRef}
-      />
-      <Homepage />
-      <Footer />
-    </>
+    <Router basename="/aphelion-labs">
+      <div className="app-container">
+        <Navbar
+          isSidebarOpen={isSidebarOpen}
+          toggleSidebar={toggleSidebar}
+          hamburgerRef={hamburgerRef}
+        />
+        <Sidebar
+          isSidebarOpen={isSidebarOpen}
+          shouldRenderSidebar={shouldRenderSidebar}
+          onClose={handleCloseSidebar}
+          hamburgerRef={hamburgerRef}
+        />
+
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/andromeda" element={<Andromeda />} />
+        </Routes>
+
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

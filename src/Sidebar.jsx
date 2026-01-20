@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Sidebar({
   isSidebarOpen,
@@ -7,6 +8,7 @@ function Sidebar({
   hamburgerRef,
 }) {
   const sidebarRef = useRef(null);
+  const navigate = useNavigate(); // ADD THIS LINE - you imported but didn't call it
 
   const [menuVisibility, setMenuVisibility] = useState(null);
 
@@ -85,16 +87,24 @@ function Sidebar({
             <p style={{ color: "midnightblue" }}>The UI Lab</p>
             <button className="toggle-button" onClick={() => toggleMenu("ui")}>
               {menuVisibility === "ui" ? (
-                <i class="fa-solid fa-angle-up"></i>
+                <i className="fa-solid fa-angle-up"></i>
               ) : (
-                <i class="fa-solid fa-angle-down"></i>
+                <i className="fa-solid fa-angle-down"></i>
               )}
             </button>
           </div>
 
           <div className="dropdown" style={{ color: "midnightblue" }}>
             <div className={`items ${menuVisibility === "ui" ? "open" : ""}`}>
-              <p>👉 Andromeda</p>
+              <p
+                onClick={() => {
+                  navigate("/andromeda");
+                  onClose(); // Close sidebar after navigation
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                👉 Andromeda
+              </p>
               <p>👉 Proxima Calculator</p>
             </div>
           </div>
