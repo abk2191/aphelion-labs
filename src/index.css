@@ -527,6 +527,45 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+.andromeda-page-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px;
+  width: 800px;
+}
+
+.andromeda-page-heading h2 {
+  color: #32327a;
+  font-family: "Inter", sans-serif;
+}
+
+.andromeda-page-heading p {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  color: #32327a;
+  text-align: left;
+  letter-spacing: 0.01em;
+  overflow-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.note-features {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   /* Styles for screens up to 768px wide (mobile) */
   .brand-name h3 {
@@ -597,5 +636,9 @@ html {
   .andromeda-description p {
     font-size: 14px;
     line-height: 1.6;
+  }
+
+  .note-features p {
+    font-size: 18px;
   }
 }
