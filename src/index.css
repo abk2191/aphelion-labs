@@ -564,6 +564,10 @@ html {
     font-size: 16px !important;
   }
 
+  .andromeda-description {
+    padding: 20px;
+  }
+
   .andromeda-screenshot-todo {
     width: 60%;
   }
