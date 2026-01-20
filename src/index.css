@@ -638,12 +638,16 @@ html {
     line-height: 1.6;
   }
 
+  .andromeda-page-heading {
+    padding: 20px;
+  }
+
   .andromeda-page-heading p {
     font-size: 14px;
     line-height: 1.6;
   }
 
   .note-features p {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
