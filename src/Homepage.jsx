@@ -77,7 +77,7 @@ function Homepage() {
                 interfaces that empower millions of people globally.
                 <br />
                 <br />
-                For us, great design isn't a luxury—it's our contribution to the
+                For us, great design isn't a luxury it's our contribution to the
                 world one seamless interaction at a time." - XYZee Labs.
               </p>
             </div>
