@@ -537,10 +537,29 @@ html {
   background-position: center;
 }
 
+.andromeda-screenshot-todo {
+  width: 20%;
+  aspect-ratio: 9 / 19.5;
+  background-image: url("/andromeda-todo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .andromeda-screenshot-notes-open {
   width: 20%;
   aspect-ratio: 9 / 19.5;
   background-image: url("/andromeda-notes-two.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+}
+
+.andromeda-screenshot-todo-open {
+  width: 20%;
+  aspect-ratio: 9 / 19.5;
+  background-image: url("/andromeda-todo-two.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -674,6 +693,11 @@ html {
   }
 
   .andromeda-screenshot-notes-open {
+    width: 35%;
+  }
+
+  .andromeda-screenshot-todo,
+  .andromeda-screenshot-todo-open {
     width: 35%;
   }
 
