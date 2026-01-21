@@ -14,7 +14,7 @@ function Navbar({ isSidebarOpen, toggleSidebar, hamburgerRef }) {
 
       <div className="brand-name">
         <h3>
-          <i className="fa-solid fa-flask"></i> Aphelion Labs.
+          <i className="fa-solid fa-flask"></i> ABK Labs.
         </h3>
       </div>
     </div>

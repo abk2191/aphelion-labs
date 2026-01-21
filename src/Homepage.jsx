@@ -8,9 +8,9 @@ function Homepage() {
             <h2>👋 Welcome to Aphelion Labs.</h2>
             <div className="margin-top-10">
               <p>
-                Aphelion Labs is a forward-thinking design and development
-                studio dedicated to crafting seamless digital experiences
-                through intuitive user interfaces.
+                ABK Labs is a forward-thinking design and development studio
+                dedicated to crafting seamless digital experiences through
+                intuitive user interfaces.
               </p>
 
               <p>
@@ -33,7 +33,7 @@ function Homepage() {
               </p>
             </div>
             <div className="tech-stack-div">
-              <div className="tech-stack">
+              {/* <div className="tech-stack">
                 <div style={{ color: "cyan" }}>
                   <i class="fa-brands fa-react"></i>
                   <p>React.js</p>
@@ -57,7 +57,7 @@ function Homepage() {
                   <i class="fa-solid fa-globe"></i>
                   <p>Full Stack</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@ function Homepage() {
                 <br />
                 <br />
                 For us, great design isn't a luxury—it's our contribution to the
-                world one seamless interaction at a time." - Aphelion Labs.
+                world one seamless interaction at a time." - ABK Labs.
               </p>
             </div>
           </div>

@@ -8,15 +8,12 @@ import Andromeda from "./Andromeda";
 
 function App() {
   //****************************************************************************/
-  //***************************** LIFTED STATES  *******************************/
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [shouldRenderSidebar, setShouldRenderSidebar] = useState(false);
   //****************************************************************************/
   //***************************** LIFTED STATES  *******************************/
-
-  const hamburgerRef = useRef(null);
-
-  //****************************************************************************/
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false); //*****************/
+  const [shouldRenderSidebar, setShouldRenderSidebar] = useState(false); //*****/
+  //***************************** LIFTED STATES  *******************************/
+  const hamburgerRef = useRef(null); //*****************************************/
   //****************************************************************************/
   //****************************************************************************/
 
