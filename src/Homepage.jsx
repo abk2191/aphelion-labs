@@ -5,7 +5,7 @@ function Homepage() {
       <div className="page-cards-wrapper">
         <div className="page-card-div">
           <div className="page-card">
-            <h2>👋 Welcome to Aphelion Labs.</h2>
+            <h2>👋 Welcome to XYZee Labs.</h2>
             <div className="margin-top-10">
               <p>
                 XYZee Labs is a forward-thinking design and development studio
