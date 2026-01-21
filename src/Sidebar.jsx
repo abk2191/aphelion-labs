@@ -78,7 +78,7 @@ function Sidebar({
       <div ref={sidebarRef} className="sidebar">
         <div className="brand-name-sidebar">
           <h3>
-            <i className="fa-solid fa-flask"></i> XYZee Labs.
+            <i className="fa-solid fa-flask"></i> iNTUIT Labs.
           </h3>
         </div>
 

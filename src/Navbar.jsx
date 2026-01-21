@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Navbar({ isSidebarOpen, toggleSidebar, hamburgerRef }) {
   return (
     <div className="navbar">
@@ -12,11 +14,13 @@ function Navbar({ isSidebarOpen, toggleSidebar, hamburgerRef }) {
         <span></span>
       </button>
 
-      <div className="brand-name">
-        <h3>
-          <i className="fa-solid fa-flask"></i> XYZee Labs.
-        </h3>
-      </div>
+      <Link to="/" style={{ textDecoration: "none" }}>
+        <div className="brand-name">
+          <h3>
+            <i className="fa-solid fa-flask"></i> iNTUIT Labs.
+          </h3>
+        </div>
+      </Link>
     </div>
   );
 }
