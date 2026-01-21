@@ -6,8 +6,8 @@ function Andromeda() {
           <h1>Andromeda.</h1>
         </div>
 
-        <div className="andromeda-description-wrapper">
-          <div className="andromeda-description">
+        <div className="page-card-div">
+          <div className="page-card">
             <p>
               Andromeda is a thoughtful productivity space designed to help you
               find clarity and act with intention. <br /> <br />
@@ -32,8 +32,8 @@ function Andromeda() {
           <div className="andromeda-screenshot-notes-open"></div>
         </div>
 
-        <div className="wrapper">
-          <div className="andromeda-page-heading">
+        <div className="page-card-div">
+          <div className="page-card">
             <h2>NOTES</h2>
             <p>
               To help you stay centered as you capture your thoughts, Andromeda
@@ -47,8 +47,10 @@ function Andromeda() {
             </p>
 
             <div className="note-features">
-              <p>👉 Pin important notes</p>
-              <p>👉 Give your notes colors</p>
+              <div>
+                <p>👉 Pin important notes</p>
+                <p>👉 Give your notes colors</p>
+              </div>
             </div>
           </div>
         </div>

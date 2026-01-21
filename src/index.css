@@ -556,8 +556,15 @@ html {
 }
 
 .note-features {
-  margin-top: 25px;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.note-features p {
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
