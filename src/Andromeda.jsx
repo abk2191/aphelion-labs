@@ -20,9 +20,9 @@ function Andromeda() {
               With a modern, intuitive interface, Andromeda is built to be fast
               and deeply respectful of your time. It is our goal to support
               those who value structure and reliability above all else. <br />{" "}
-              <br /> Rather than pushing you, Andromeda simply provides the
-              steady tools you need to stay centered and accomplish what matters
-              most to you.
+              <br />
+              Andromeda simply provides the steady tools you need to stay
+              centered and accomplish what matters most to you.
             </p>
           </div>
         </div>
