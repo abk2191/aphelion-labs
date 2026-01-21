@@ -58,6 +58,42 @@ function Homepage() {
                   <p>Full Stack</p>
                 </div>
               </div> */}
+              <div className="tech-stack-div-one">
+                <div className="tech-wrapper">
+                  <i class="fa-brands fa-react" style={{ color: "cyan" }}></i>{" "}
+                  <p>React</p>
+                </div>
+                <div className="tech-wrapper">
+                  <i class="fa-brands fa-js" style={{ color: "gold" }}></i>
+                  <p>JavaScript</p>
+                </div>
+                <div className="tech-wrapper">
+                  <i class="fa-brands fa-html5" style={{ color: "orange" }}></i>
+                  <p>HTML 5</p>
+                </div>
+                <div className="tech-wrapper">
+                  <i class="fa-brands fa-git-alt" style={{ color: "red" }}></i>
+                  <p>Git</p>
+                </div>
+              </div>
+              <div className="tech-stack-div-one">
+                <div className="tech-wrapper">
+                  <i class="fa-brands fa-python" style={{ color: "blue" }}></i>
+                  <p>Python</p>
+                </div>
+                <div className="tech-wrapper">
+                  <i class="fa-brands fa-java" style={{ color: "blue" }}></i>
+                  <p>Java</p>
+                </div>
+                <div className="tech-wrapper">
+                  <i class="fa-brands fa-docker" style={{ color: "green" }}></i>
+                  <p>Docker</p>
+                </div>
+                <div className="tech-wrapper">
+                  <i class="fa-solid fa-globe" style={{ color: "navy" }}></i>
+                  <p>Full Stack</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
