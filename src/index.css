@@ -560,11 +560,11 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 8px;
 }
 
-.note-features p {
-  margin: 0;
-  padding: 0;
+.note-features p + p {
+  margin-top: 2px;
 }
 
 .wrapper {
