@@ -59,6 +59,29 @@ function Andromeda() {
           <div className="andromeda-screenshot-todo"></div>
           <div className="andromeda-screenshot-todo-open"></div>
         </div>
+
+        <div className="page-card-div">
+          <div className="page-card">
+            <h2>TODO</h2>
+            <p>
+              Andromeda Todo module, a streamlined task manager designed to
+              bring immediate clarity to your busy day. It features a bold,
+              intuitive interface that lets you organize your life into
+              distinct, color-coded categories with just a few taps. <br />{" "}
+              <br /> You can easily pin your most critical lists to the top of
+              your dashboard. Adding, completing, and managing individual tasks
+              is incredibly fluid, complete with visual strike-throughs to give
+              you that satisfying sense of progress.
+            </p>
+
+            <div className="note-features">
+              <div>
+                <p>👉 Pin important todos</p>
+                <p>👉 Give your todos colors</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
