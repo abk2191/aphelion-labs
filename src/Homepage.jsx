@@ -8,7 +8,7 @@ function Homepage() {
             <h2>👋 Welcome to Aphelion Labs.</h2>
             <div className="margin-top-10">
               <p>
-                ABK Labs is a forward-thinking design and development studio
+                XYZee Labs is a forward-thinking design and development studio
                 dedicated to crafting seamless digital experiences through
                 intuitive user interfaces.
               </p>
@@ -78,7 +78,7 @@ function Homepage() {
                 <br />
                 <br />
                 For us, great design isn't a luxury—it's our contribution to the
-                world one seamless interaction at a time." - ABK Labs.
+                world one seamless interaction at a time." - XYZee Labs.
               </p>
             </div>
           </div>
