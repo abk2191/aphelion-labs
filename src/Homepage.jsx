@@ -8,7 +8,7 @@ function Homepage() {
             <h2>👋 Welcome to XYZee Labs.</h2>
             <div className="margin-top-10">
               <p>
-                XYZee Labs is a forward-thinking design and development studio
+                XYZee Labs is a forward thinking design and development studio
                 dedicated to crafting seamless digital experiences through
                 intuitive user interfaces.
               </p>
