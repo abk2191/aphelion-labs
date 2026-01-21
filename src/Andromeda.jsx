@@ -45,13 +45,6 @@ function Andromeda() {
               your workspace with a variety of beautiful colors for a more
               personal, intentional feel.
             </p>
-
-            <div className="note-features">
-              <div>
-                <p>👉 Pin important notes</p>
-                <p>👉 Give your notes colors</p>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -73,13 +66,6 @@ function Andromeda() {
               is incredibly fluid, complete with visual strike-throughs to give
               you that satisfying sense of progress.
             </p>
-
-            <div className="note-features">
-              <div>
-                <p>👉 Pin important todos</p>
-                <p>👉 Give your todos colors</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
