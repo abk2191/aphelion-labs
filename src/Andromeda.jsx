@@ -123,7 +123,7 @@ function Andromeda() {
 
         <div className="page-card-div">
           <div className="page-card">
-            <h2>HOW TO INSTALL ANDROMEDA</h2>
+            <h2>HOW TO INSTALL</h2>
             <p>
               Launch Andromeda on Google Chrome (preferable) from the button
               below and click on the ⋮ . Then click on "Add to home screen" then
