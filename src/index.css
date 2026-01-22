@@ -866,7 +866,7 @@ html {
     width: 150px !important;
   }
 
-  .step-one {
+  /* .step-one {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -876,14 +876,14 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+  } */
 
-  .step-two img {
+  /* .step-two img {
     height: 150px !important;
     width: 150px !important;
-  }
+  } */
 
   .how-to-install-div {
-    justify-content: space-between;
+    justify-content: center;
   }
 }

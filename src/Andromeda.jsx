@@ -130,7 +130,7 @@ function Andromeda() {
               tap "Install"
             </p>
             <div className="how-to-install-div">
-              <div className="step-one">
+              {/* <div className="step-one">
                 <img
                   src="./installation-step-one.jpg"
                   alt=""
@@ -140,7 +140,7 @@ function Andromeda() {
                     objectFit: "contain",
                   }}
                 />
-              </div>
+              </div> */}
               <div className="step-two">
                 <img
                   src="./installation-step-two.jpg"
