@@ -866,12 +866,24 @@ html {
     width: 150px !important;
   }
 
+  .step-one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .step-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .step-two img {
     height: 150px !important;
     width: 150px !important;
   }
 
   .how-to-install-div {
-    justify-content: center;
+    justify-content: space-between;
   }
 }
