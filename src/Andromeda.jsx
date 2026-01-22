@@ -121,6 +121,41 @@ function Andromeda() {
           </div>
         </div>
 
+        <div className="page-card-div">
+          <div className="page-card">
+            <h2>HOW TO INSTALL ANDROMEDA</h2>
+            <p>
+              Launch Andromeda on Google Chrome (preferable) from the button
+              below and click on the ⋮ . Then click on "Add to home screen" then
+              tap "Install"
+            </p>
+            <div className="how-to-install-div">
+              <div className="step-one">
+                <img
+                  src="./installation-step-one.jpg"
+                  alt=""
+                  style={{
+                    height: "250px",
+                    width: "250px",
+                    objectFit: "contain",
+                  }}
+                />
+              </div>
+              <div className="step-two">
+                <img
+                  src="./installation-step-two.jpg"
+                  alt=""
+                  style={{
+                    height: "250px",
+                    width: "250px",
+                    objectFit: "contain",
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="get-button">
           <button class="cssbuttons-io-button" onClick={handleClick}>
             Try Andromeda
