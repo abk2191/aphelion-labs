@@ -46,7 +46,7 @@ function Andromeda() {
             <h2>NOTES</h2>
             <p>
               To help you stay centered as you capture your thoughts, Andromeda
-              offers a beautifully simple space to organize your notes. <br />{" "}
+              offers a beautifully simple space to organize your notes. <br />
               <br />
               You can easily prioritize your ideas by pinning or unpinning them,
               ensuring your most important tasks always remain on track. <br />
