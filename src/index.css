@@ -860,4 +860,18 @@ html {
   .tech-stack-div-wrapper-wrapper {
     justify-content: space-between;
   }
+
+  .step-one img {
+    height: 170px !important;
+    width: 170px !important;
+  }
+
+  .step-two img {
+    height: 170px !important;
+    width: 170px !important;
+  }
+
+  .how-to-install-div {
+    justify-content: center;
+  }
 }
