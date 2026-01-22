@@ -1,10 +1,12 @@
 function Andromeda() {
   const handleClick = () => {
-    window.open(
-      "https://abk2191.github.io/andromeda/notes",
-      "_blank",
-      "noopener,noreferrer",
-    );
+    setTimeout(() => {
+      window.open(
+        "https://abk2191.github.io/andromeda/notes",
+        "_blank",
+        "noopener,noreferrer",
+      );
+    }, 1500); // 2.5 seconds
   };
   return (
     <>
