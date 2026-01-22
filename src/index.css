@@ -532,75 +532,100 @@ html {
   width: 20%;
   aspect-ratio: 9 / 19.5;
   background-image: url("/andromeda-notes-one.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.15),
+    0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .andromeda-screenshot-todo {
   width: 20%;
   aspect-ratio: 9 / 19.5;
   background-image: url("/andromeda-todo.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.15),
+    0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .andromeda-screenshot-calendar {
   width: 20%;
   aspect-ratio: 9 / 19.5;
   background-image: url("/andromeda-calendar-month.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.15),
+    0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .andromeda-screenshot-mindmap {
   width: 20%;
   aspect-ratio: 9 / 19.5;
   background-image: url("/andromeda-screenshot-mindmap.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.15),
+    0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .andromeda-screenshot-mindmap-two {
   width: 20%;
   aspect-ratio: 9 / 19.5;
   background-image: url("/andromeda-screenshot-mindmap-two.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: white;
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.15),
+    0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .andromeda-screenshot-notes-open {
   width: 20%;
   aspect-ratio: 9 / 19.5;
   background-image: url("/andromeda-notes-two.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.15),
+    0 6px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
 .andromeda-screenshot-todo-open {
   width: 20%;
   aspect-ratio: 9 / 19.5;
   background-image: url("/andromeda-todo-two.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: white;
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.15),
+    0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .andromeda-screenshot-calendar-two {
   width: 20%;
   aspect-ratio: 9 / 19.5;
   background-image: url("/andromeda-calendar-year.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: white;
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.15),
+    0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .andromeda-description p {
