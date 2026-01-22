@@ -555,6 +555,25 @@ html {
   background-position: center;
 }
 
+.andromeda-screenshot-mindmap {
+  width: 20%;
+  aspect-ratio: 9 / 19.5;
+  background-image: url("/andromeda-screenshot-mindmap.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.andromeda-screenshot-mindmap-two {
+  width: 20%;
+  aspect-ratio: 9 / 19.5;
+  background-image: url("/andromeda-screenshot-mindmap-two.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+}
+
 .andromeda-screenshot-notes-open {
   width: 20%;
   aspect-ratio: 9 / 19.5;
@@ -722,6 +741,11 @@ html {
 
   .andromeda-screenshot-calendar,
   .andromeda-screenshot-calendar-two {
+    width: 35%;
+  }
+
+  .andromeda-screenshot-mindmap,
+  .andromeda-screenshot-mindmap-two {
     width: 35%;
   }
 

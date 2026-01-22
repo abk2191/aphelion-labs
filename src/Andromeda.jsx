@@ -90,6 +90,27 @@ function Andromeda() {
             </p>
           </div>
         </div>
+
+        <div className="andromeda-screenshot-wrapper">
+          <div className="andromeda-screenshot-mindmap"></div>
+          <div className="andromeda-screenshot-mindmap-two"></div>
+        </div>
+
+        <div className="page-card-div">
+          <div className="page-card">
+            <h2>MINDMAP</h2>
+            <p>
+              Visualize your ideas with our intuitive Mindmap tool, designed to
+              help you structure complex thoughts with ease. You can start by
+              establishing a central "Base topic" and branching out into
+              multiple main categories to define your core concepts. The
+              interface allows you to add granular sub-topics seamlessly,
+              capturing your brainstorm in a logical hierarchy. <br /> <br />{" "}
+              Managing your workspace is simple with dedicated zoom and refresh
+              controls that keep your map clear and accessible.
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
