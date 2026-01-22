@@ -1,4 +1,11 @@
 function Andromeda() {
+  const handleClick = () => {
+    window.open(
+      "https://abk2191.github.io/andromeda/notes",
+      "_blank",
+      "noopener,noreferrer",
+    );
+  };
   return (
     <>
       <div>
@@ -113,7 +120,7 @@ function Andromeda() {
         </div>
 
         <div className="get-button">
-          <button class="cssbuttons-io-button">
+          <button class="cssbuttons-io-button" onClick={handleClick}>
             Try Andromeda
             <div class="icon">
               <svg

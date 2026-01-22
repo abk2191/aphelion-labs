@@ -669,7 +669,7 @@ html {
 
 /* From Uiverse.io by adamgiebl */
 .cssbuttons-io-button {
-  background: #a370f0;
+  background: midnightblue;
   color: white;
   font-family: inherit;
   padding: 0.35em;
@@ -687,6 +687,7 @@ html {
   height: 2.8em;
   padding-right: 3.3em;
   cursor: pointer;
+  font-family: "Inter", sans-serif;
 }
 
 .cssbuttons-io-button .icon {
