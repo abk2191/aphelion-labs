@@ -68,6 +68,30 @@ function Andromeda() {
             </p>
           </div>
         </div>
+
+        <div className="andromeda-screenshot-wrapper">
+          <div className="andromeda-screenshot-calendar"></div>
+          <div className="andromeda-screenshot-calendar-two"></div>
+        </div>
+
+        <div className="page-card-div">
+          <div className="page-card">
+            <h2>CALENDAR</h2>
+            <p>
+              Stay organized and inspired with this clean, intuitive calendar
+              designed to keep your schedule and thoughts in perfect harmony.
+              Whether you prefer a bird's-eye view of your entire year or a
+              focused monthly layout, switching between perspectives is seamless
+              and simple. One of its standout features is the "thought of the
+              day" option, allowing you to anchor your daily reflections
+              directly alongside your appointments. <br /> <br /> You can also
+              easily add or view specific events with just a quick tap on any
+              date and also get notifications. We’ve focused on creating a
+              clutter-free experience that helps you manage your time while
+              leaving room for personal growth.
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
