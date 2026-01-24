@@ -137,7 +137,7 @@ function Sidebar({
             </div>
           </div>
 
-          <div className="menu-item">
+          <div className="menu-item" style={{ padding: "5px" }}>
             <p
               style={{ color: "midnightblue", cursor: "pointer" }}
               onClick={() => toggleMenu("contact")}
@@ -161,7 +161,7 @@ function Sidebar({
               className={`items ${menuVisibility === "contact" ? "open" : ""}`}
             >
               <div className="menu-items">
-                <p>📨 Email</p>
+                <p>Email</p>
               </div>
               <div className="menu-items">
                 <p
@@ -171,7 +171,7 @@ function Sidebar({
                   }}
                   style={{ cursor: "pointer" }}
                 >
-                  👨‍💻 Know the developer
+                  Know the developer
                 </p>
               </div>
             </div>
