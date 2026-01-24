@@ -809,6 +809,9 @@ html {
   align-items: center;
   justify-content: left;
   gap: 6px;
+  border-radius: 15px;
+  width: fit-content;
+  background-color: whitesmoke;
 }
 
 @media (max-width: 768px) {
