@@ -82,6 +82,8 @@ function Sidebar({
           </h3>
         </div>
 
+        <div className="divider-line"></div>
+
         <div className="sidebar-items">
           <div className="menu-item">
             <p

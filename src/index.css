@@ -813,6 +813,10 @@ html {
   background-color: whitesmoke;
 }
 
+.divider-line {
+  border-top: 1px solid rgb(235, 233, 233);
+}
+
 /* From Uiverse.io by d4niz */
 .contactButton {
   background: midnightblue;
