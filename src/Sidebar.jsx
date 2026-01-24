@@ -120,7 +120,7 @@ function Sidebar({
               <div className="menu-items">
                 <img
                   src="./calculator.png"
-                  style={{ height: "30px", width: "30px" }}
+                  style={{ height: "32px", width: "32px" }}
                 />{" "}
                 <p
                   onClick={() => {
