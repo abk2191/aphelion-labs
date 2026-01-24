@@ -141,7 +141,6 @@
 }
 
 .items {
-  margin-left: 14px;
   display: flex;
   flex-direction: column;
   text-align: left;
