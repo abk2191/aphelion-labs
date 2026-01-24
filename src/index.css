@@ -877,6 +877,11 @@ html {
     width: 35%;
   }
 
+  .andromeda-screenshot-proxima-one,
+  .andromeda-screenshot-proxima-two {
+    width: 35%;
+  }
+
   .andromeda-description p {
     font-size: 14.5px;
     line-height: 1.6;
