@@ -160,8 +160,12 @@ function Sidebar({
             <div
               className={`items ${menuVisibility === "contact" ? "open" : ""}`}
             >
-              <p>📨 Email</p>
-              <p>🌐 LinkedIn</p>
+              <div className="menu-items">
+                <p>📨 Email</p>
+              </div>
+              <div className="menu-items">
+                <p>👨‍💻 Know the developer</p>
+              </div>
             </div>
           </div>
         </div>
