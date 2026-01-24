@@ -1,12 +1,10 @@
 function Andromeda() {
   const handleClick = () => {
-    setTimeout(() => {
-      window.open(
-        "https://abk2191.github.io/andromeda/notes",
-        "_blank",
-        "noopener,noreferrer",
-      );
-    }, 1500); // 2.5 seconds
+    window.open(
+      "https://abk2191.github.io/andromeda/notes",
+      "_blank",
+      "noopener,noreferrer",
+    );
   };
   return (
     <>
@@ -157,9 +155,9 @@ function Andromeda() {
         </div>
 
         <div className="get-button">
-          <button class="cssbuttons-io-button" onClick={handleClick}>
+          <button class="contactButton" onClick={handleClick}>
             Try Andromeda
-            <div class="icon">
+            <div class="iconButton">
               <svg
                 height="24"
                 width="24"

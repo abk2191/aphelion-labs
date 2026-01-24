@@ -164,7 +164,15 @@ function Sidebar({
                 <p>📨 Email</p>
               </div>
               <div className="menu-items">
-                <p>👨‍💻 Know the developer</p>
+                <p
+                  onClick={() => {
+                    navigate("/KnowTheDeveloper");
+                    onClose(); // Close sidebar after navigation
+                  }}
+                  style={{ cursor: "pointer" }}
+                >
+                  👨‍💻 Know the developer
+                </p>
               </div>
             </div>
           </div>
