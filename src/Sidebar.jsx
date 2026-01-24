@@ -139,7 +139,7 @@ function Sidebar({
             </div>
           </div>
 
-          <div className="menu-item" style={{ padding: "5px" }}>
+          <div className="menu-item">
             <p
               style={{ color: "midnightblue", cursor: "pointer" }}
               onClick={() => toggleMenu("contact")}
