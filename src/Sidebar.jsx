@@ -105,7 +105,15 @@ function Sidebar({
               >
                 👉 Andromeda
               </p>
-              <p>👉 Proxima Calculator</p>
+              <p
+                onClick={() => {
+                  navigate("/ProximaCalculator");
+                  onClose(); // Close sidebar after navigation
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                👉 Proxima Calculator
+              </p>
             </div>
           </div>
 

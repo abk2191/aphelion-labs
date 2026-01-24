@@ -5,6 +5,7 @@ import Sidebar from "./Sidebar";
 import Homepage from "./Homepage";
 import Footer from "./Footer";
 import Andromeda from "./Andromeda";
+import ProximaCalculator from "./ProximaCalculator";
 
 function App() {
   //****************************************************************************/
@@ -75,6 +76,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/andromeda" element={<Andromeda />} />
+          <Route path="/proximacalculator" element={<ProximaCalculator />} />
         </Routes>
 
         <Footer />

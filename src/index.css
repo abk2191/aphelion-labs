@@ -540,6 +540,18 @@ html {
     0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
+.andromeda-screenshot-proxima-one {
+  width: 20%;
+  aspect-ratio: 9 / 19.5;
+  background-image: url("/calculator-white.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.15),
+    0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
 .andromeda-screenshot-todo {
   width: 20%;
   aspect-ratio: 9 / 19.5;
@@ -593,6 +605,19 @@ html {
   width: 20%;
   aspect-ratio: 9 / 19.5;
   background-image: url("/andromeda-notes-two.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.15),
+    0 6px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.andromeda-screenshot-proxima-two {
+  width: 20%;
+  aspect-ratio: 9 / 19.5;
+  background-image: url("/calculator-dark.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
