@@ -144,6 +144,7 @@
   margin-left: 20px;
   display: flex;
   flex-direction: column;
+  text-align: left;
   gap: 20px;
   width: 100%;
   overflow: hidden;
@@ -793,6 +794,13 @@ html {
 .step-two {
   height: 250px;
   width: 250px;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 6px;
 }
 
 @media (max-width: 768px) {

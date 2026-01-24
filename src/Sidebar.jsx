@@ -84,7 +84,12 @@ function Sidebar({
 
         <div className="sidebar-items">
           <div className="menu-item">
-            <p style={{ color: "midnightblue" }}>The UI Lab</p>
+            <p
+              onClick={() => toggleMenu("ui")}
+              style={{ color: "midnightblue", cursor: "pointer" }}
+            >
+              The UI Lab
+            </p>
             <button className="toggle-button" onClick={() => toggleMenu("ui")}>
               {menuVisibility === "ui" ? (
                 <i className="fa-solid fa-angle-up"></i>
@@ -96,29 +101,47 @@ function Sidebar({
 
           <div className="dropdown" style={{ color: "midnightblue" }}>
             <div className={`items ${menuVisibility === "ui" ? "open" : ""}`}>
-              <p
-                onClick={() => {
-                  navigate("/andromeda");
-                  onClose(); // Close sidebar after navigation
-                }}
-                style={{ cursor: "pointer" }}
-              >
-                👉 Andromeda
-              </p>
-              <p
-                onClick={() => {
-                  navigate("/ProximaCalculator");
-                  onClose(); // Close sidebar after navigation
-                }}
-                style={{ cursor: "pointer" }}
-              >
-                👉 Proxima Calculator
-              </p>
+              {" "}
+              <div className="menu-items">
+                <img
+                  src="./andromeda.png"
+                  style={{ height: "30px", width: "30px" }}
+                />{" "}
+                <p
+                  onClick={() => {
+                    navigate("/andromeda");
+                    onClose(); // Close sidebar after navigation
+                  }}
+                  style={{ cursor: "pointer" }}
+                >
+                  Andromeda
+                </p>
+              </div>{" "}
+              <div className="menu-items">
+                <img
+                  src="./calculator.png"
+                  style={{ height: "30px", width: "30px" }}
+                />{" "}
+                <p
+                  onClick={() => {
+                    navigate("/ProximaCalculator");
+                    onClose(); // Close sidebar after navigation
+                  }}
+                  style={{ cursor: "pointer" }}
+                >
+                  Proxima Calculator
+                </p>
+              </div>
             </div>
           </div>
 
           <div className="menu-item">
-            <p style={{ color: "midnightblue" }}>Contact</p>
+            <p
+              style={{ color: "midnightblue", cursor: "pointer" }}
+              onClick={() => toggleMenu("contact")}
+            >
+              Contact
+            </p>
             <button
               className="toggle-button"
               onClick={() => toggleMenu("contact")}
