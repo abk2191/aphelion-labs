@@ -5,7 +5,7 @@ function Homepage() {
       <div className="page-cards-wrapper">
         <div className="page-card-div">
           <div className="page-card">
-            <h2>👋 Welcome to iNTUIT Labs.</h2>
+            <h2>👋 Welcome to iINTUIT Labs.</h2>
             <div className="margin-top-10">
               <p>
                 iNTUIT Labs. is a forward thinking design and development studio
@@ -140,7 +140,7 @@ function Homepage() {
                 <br />
                 <br />
                 For us, great design isn't a luxury it's our contribution to the
-                world one seamless interaction at a time." - iNTUIT Labs.
+                world one seamless interaction at a time." - iINTUIT Labs.
               </p>
             </div>
           </div>

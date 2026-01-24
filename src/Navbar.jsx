@@ -17,7 +17,7 @@ function Navbar({ isSidebarOpen, toggleSidebar, hamburgerRef }) {
       <Link to="/" style={{ textDecoration: "none" }}>
         <div className="brand-name">
           <h3>
-            <i className="fa-solid fa-flask"></i> iNTUIT Labs.
+            <i className="fa-solid fa-flask"></i> iINTUIT Labs.
           </h3>
         </div>
       </Link>
