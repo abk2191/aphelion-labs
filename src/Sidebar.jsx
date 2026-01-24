@@ -113,6 +113,7 @@ function Sidebar({
                     onClose(); // Close sidebar after navigation
                   }}
                   style={{ cursor: "pointer" }}
+                  className="andromeda-menu-text"
                 >
                   Andromeda
                 </p>
@@ -128,6 +129,7 @@ function Sidebar({
                     onClose(); // Close sidebar after navigation
                   }}
                   style={{ cursor: "pointer" }}
+                  className="calculator-menu-text"
                 >
                   Proxima Calculator
                 </p>

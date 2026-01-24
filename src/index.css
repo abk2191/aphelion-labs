@@ -162,6 +162,14 @@
   font-size: 20px;
 }
 
+/* .calculator-menu-text {
+  font-size: 8px;
+}
+
+.andromeda-menu-text {
+  font-size: 20px;
+} */
+
 .items.open {
   max-height: 300px; /* must be >= content height */
   opacity: 1;
@@ -855,7 +863,7 @@ html {
   }
 
   .items p {
-    font-size: 16px !important;
+    font-size: 15px !important;
   }
 
   .andromeda-description {
