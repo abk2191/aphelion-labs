@@ -22,7 +22,7 @@ function KnowTheDeveloper() {
           <p>
             With a deep foundation in systems literacy and a passion for
             user-centric design, I bridge the gap between how a product looks
-            and how it performs. Let’s build something meaningful together."
+            and how it performs."
           </p>
         </div>
       </div>
