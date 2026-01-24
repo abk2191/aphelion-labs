@@ -141,7 +141,7 @@
 }
 
 .items {
-  margin-left: 20px;
+  margin-left: 14px;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -809,6 +809,7 @@ html {
   align-items: center;
   justify-content: left;
   gap: 6px;
+  padding: 4px;
   border-radius: 15px;
   background-color: whitesmoke;
 }
