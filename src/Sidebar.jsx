@@ -103,10 +103,10 @@ function Sidebar({
             <div className={`items ${menuVisibility === "ui" ? "open" : ""}`}>
               {" "}
               <div className="menu-items">
-                <img
+                {/* <img
                   src="./andromeda.png"
                   style={{ height: "30px", width: "30px" }}
-                />{" "}
+                />{" "} */}
                 <p
                   onClick={() => {
                     navigate("/andromeda");
@@ -119,10 +119,10 @@ function Sidebar({
                 </p>
               </div>{" "}
               <div className="menu-items">
-                <img
+                {/* <img
                   src="./calculator.png"
                   style={{ height: "32px", width: "32px" }}
-                />{" "}
+                />{" "} */}
                 <p
                   onClick={() => {
                     navigate("/ProximaCalculator");
