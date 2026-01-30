@@ -163,18 +163,7 @@ function Sidebar({
               className={`items ${menuVisibility === "contact" ? "open" : ""}`}
             >
               <div className="menu-items">
-                <p>Email</p>
-              </div>
-              <div className="menu-items">
-                <p
-                  onClick={() => {
-                    navigate("/KnowTheDeveloper");
-                    onClose(); // Close sidebar after navigation
-                  }}
-                  style={{ cursor: "pointer" }}
-                >
-                  Know the developer
-                </p>
+                <p>Get in touch</p>
               </div>
             </div>
           </div>
