@@ -171,7 +171,7 @@ function Sidebar({
               className={`items ${menuVisibility === "contact" ? "open" : ""}`}
             >
               <div className="menu-items">
-                <p>Get in touch</p>
+                <p>👋 Get in touch</p>
               </div>
             </div>
           </div>
