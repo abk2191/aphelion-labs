@@ -95,7 +95,7 @@ function Sidebar({
             <p
               onClick={() => toggleMenu("ui")}
               style={{
-                color: isDarkTheme ? "greenyellow" : "midnightblue",
+                color: isDarkTheme ? "whitesmoke" : "midnightblue",
                 cursor: "pointer",
               }}
             >
@@ -118,10 +118,7 @@ function Sidebar({
                   src="./andromeda.png"
                   style={{ height: "30px", width: "30px" }}
                 />{" "} */}
-                <img
-                  src="./and.png"
-                  style={{ height: "30px", width: "30px" }}
-                />
+
                 <p
                   onClick={() => {
                     navigate("/andromeda");
@@ -138,10 +135,7 @@ function Sidebar({
                   src="./calculator.png"
                   style={{ height: "32px", width: "32px" }}
                 />{" "} */}
-                <img
-                  src="./calc.png"
-                  style={{ height: "30px", width: "30px" }}
-                />
+
                 <p
                   onClick={() => {
                     navigate("/ProximaCalculator");
@@ -159,7 +153,7 @@ function Sidebar({
           <div className="menu-item">
             <p
               style={{
-                color: isDarkTheme ? "greenyellow" : "midnightblue",
+                color: isDarkTheme ? "whitesmoke" : "midnightblue",
                 cursor: "pointer",
               }}
               onClick={() => toggleMenu("contact")}

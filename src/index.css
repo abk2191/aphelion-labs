@@ -873,16 +873,16 @@ html {
 }
 
 .brand-name-dark h3 {
-  color: greenyellow !important;
+  color: whitesmoke !important;
 }
 
 .hamburger-dark span {
-  background-color: greenyellow;
+  background-color: whitesmoke;
 }
 
 .hamburger-dark.open span:nth-child(1) {
   transform: translateY(13px) rotate(45deg);
-  background-color: greenyellow;
+  background-color: whitesmoke;
 }
 
 .hamburger.open span:nth-child(2) {
@@ -892,28 +892,28 @@ html {
 
 .hamburger-dark.open span:nth-child(3) {
   transform: translateY(-13px) rotate(-45deg);
-  background-color: greenyellow;
+  background-color: whitesmoke;
 }
 
 .sidebar-dark {
   background-color: black;
-  border-top: 1px solid greenyellow;
+  border-top: 1px solid whitesmoke;
 }
 
 .sidebar-dark h3 {
-  color: greenyellow;
+  color: whitesmoke;
 }
 
 .sidebar-dark p {
-  color: greenyellow;
+  color: whitesmoke;
 }
 
 .sidebar-dark .sidebar-items .menu-item p {
-  color: greenyellow;
+  color: whitesmoke;
 }
 
 .divider-line-dark {
-  border-top: 1px solid greenyellow;
+  border-top: 1px solid whitesmoke;
 }
 
 @media (max-width: 768px) {
