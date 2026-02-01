@@ -897,7 +897,7 @@ html {
 
 .sidebar-dark {
   background-color: black;
-  border-top: 1px solid whitesmoke;
+  border-top: 1px solid #1a1a1a;
 }
 
 .sidebar-dark h3 {
@@ -913,7 +913,7 @@ html {
 }
 
 .divider-line-dark {
-  border-top: 1px solid whitesmoke;
+  border-top: 1px solid #1a1a1a;
 }
 
 @media (max-width: 768px) {
