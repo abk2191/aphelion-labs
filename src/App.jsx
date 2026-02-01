@@ -13,11 +13,16 @@ function App() {
   //****************************************************************************/
   //***************************** LIFTED STATES  *******************************/
   const [isSidebarOpen, setIsSidebarOpen] = useState(false); //*****************/
-  const [shouldRenderSidebar, setShouldRenderSidebar] = useState(false); //*****/
+  const [shouldRenderSidebar, setShouldRenderSidebar] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(false); //*****/
   //***************************** LIFTED STATES  *******************************/
   const hamburgerRef = useRef(null); //*****************************************/
   //****************************************************************************/
   //****************************************************************************/
+
+  function handleThemeToggle() {
+    setIsDarkTheme((prev) => !prev);
+  }
 
   // Toggle Sidebar Function
   const toggleSidebar = () => {
@@ -66,12 +71,15 @@ function App() {
           isSidebarOpen={isSidebarOpen}
           toggleSidebar={toggleSidebar}
           hamburgerRef={hamburgerRef}
+          handleThemeToggle={handleThemeToggle}
+          isDarkTheme={isDarkTheme}
         />
         <Sidebar
           isSidebarOpen={isSidebarOpen}
           shouldRenderSidebar={shouldRenderSidebar}
           onClose={handleCloseSidebar}
           hamburgerRef={hamburgerRef}
+          isDarkTheme={isDarkTheme}
         />
 
         <Routes>

@@ -1,11 +1,17 @@
 import { Link } from "react-router-dom";
 
-function Navbar({ isSidebarOpen, toggleSidebar, hamburgerRef }) {
+function Navbar({
+  isSidebarOpen,
+  toggleSidebar,
+  hamburgerRef,
+  handleThemeToggle,
+  isDarkTheme,
+}) {
   return (
-    <div className="navbar">
+    <div className={`navbar ${isDarkTheme ? "navbar-dark" : ""}`}>
       <button
         ref={hamburgerRef}
-        className={`hamburger ${isSidebarOpen ? "open" : ""}`}
+        className={`hamburger ${isSidebarOpen ? "open" : ""} ${isDarkTheme ? "hamburger-dark" : ""}`}
         onClick={toggleSidebar}
         aria-label={isSidebarOpen ? "Close menu" : "Open menu"}
       >
@@ -14,8 +20,10 @@ function Navbar({ isSidebarOpen, toggleSidebar, hamburgerRef }) {
         <span></span>
       </button>
 
+      <button onClick={() => handleThemeToggle()}>Dark Theme</button>
+
       <Link to="/" style={{ textDecoration: "none" }}>
-        <div className="brand-name">
+        <div className={`brand-name ${isDarkTheme ? "brand-name-dark" : ""}`}>
           <h3>
             <i className="fa-solid fa-flask"></i> iINTUIT Labs.
           </h3>

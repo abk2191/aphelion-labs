@@ -6,6 +6,7 @@ function Sidebar({
   shouldRenderSidebar,
   onClose,
   hamburgerRef,
+  isDarkTheme,
 }) {
   const sidebarRef = useRef(null);
   const navigate = useNavigate(); // ADD THIS LINE - you imported but didn't call it
@@ -75,20 +76,28 @@ function Sidebar({
 
   return (
     <>
-      <div ref={sidebarRef} className="sidebar">
+      <div
+        ref={sidebarRef}
+        className={`sidebar ${isDarkTheme ? "sidebar-dark" : ""}`}
+      >
         <div className="brand-name-sidebar">
           <h3>
             <i className="fa-solid fa-flask"></i> iINTUIT Labs.
           </h3>
         </div>
 
-        <div className="divider-line"></div>
+        <div
+          className={`divider-line ${isDarkTheme ? "divider-line-dark" : ""}`}
+        ></div>
 
         <div className="sidebar-items">
           <div className="menu-item">
             <p
               onClick={() => toggleMenu("ui")}
-              style={{ color: "midnightblue", cursor: "pointer" }}
+              style={{
+                color: isDarkTheme ? "greenyellow" : "midnightblue",
+                cursor: "pointer",
+              }}
             >
               The UI Lab
             </p>
@@ -149,7 +158,10 @@ function Sidebar({
 
           <div className="menu-item">
             <p
-              style={{ color: "midnightblue", cursor: "pointer" }}
+              style={{
+                color: isDarkTheme ? "greenyellow" : "midnightblue",
+                cursor: "pointer",
+              }}
               onClick={() => toggleMenu("contact")}
             >
               Contact
