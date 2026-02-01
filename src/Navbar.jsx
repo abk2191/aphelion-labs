@@ -20,7 +20,13 @@ function Navbar({
         <span></span>
       </button>
 
-      <button onClick={() => handleThemeToggle()}>Dark Theme</button>
+      <button className="theme-switcher" onClick={() => handleThemeToggle()}>
+        {isDarkTheme ? (
+          <i className="fa-solid fa-sun" style={{ color: "whitesmoke" }}></i>
+        ) : (
+          <i className="fa-solid fa-moon" style={{ color: "midnightblue" }}></i>
+        )}
+      </button>
 
       <Link to="/" style={{ textDecoration: "none" }}>
         <div className={`brand-name ${isDarkTheme ? "brand-name-dark" : ""}`}>

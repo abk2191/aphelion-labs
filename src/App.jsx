@@ -99,13 +99,18 @@ function App() {
         />
 
         <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/andromeda" element={<Andromeda />} />
-          <Route path="/proximacalculator" element={<ProximaCalculator />} />
-          <Route path="/KnowTheDeveloper" element={<KnowTheDeveloper />} />
+          <Route path="/" element={<Homepage isDarkTheme={isDarkTheme} />} />
+          <Route
+            path="/andromeda"
+            element={<Andromeda isDarkTheme={isDarkTheme} />}
+          />
+          <Route
+            path="/proximacalculator"
+            element={<ProximaCalculator isDarkTheme={isDarkTheme} />}
+          />
         </Routes>
 
-        <Footer />
+        <Footer isDarkTheme={isDarkTheme} />
       </div>
     </Router>
   );

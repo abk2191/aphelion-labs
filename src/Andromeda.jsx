@@ -1,4 +1,4 @@
-function Andromeda() {
+function Andromeda({ isDarkTheme }) {
   const handleClick = () => {
     window.open(
       "https://abk2191.github.io/andromeda/notes",
@@ -9,12 +9,14 @@ function Andromeda() {
   return (
     <>
       <div>
-        <div className="andromeda-banner">
+        <div
+          className={`andromeda-banner ${isDarkTheme ? "andromeda-banner-dark" : ""}`}
+        >
           <h1>Andromeda.</h1>
         </div>
 
         <div className="page-card-div">
-          <div className="page-card">
+          <div className={`page-card ${isDarkTheme ? "page-card-dark" : ""}`}>
             <p>
               Andromeda is a thoughtful productivity space designed to help you
               find clarity and act with intention. <br /> <br />
@@ -40,7 +42,7 @@ function Andromeda() {
         </div>
 
         <div className="page-card-div">
-          <div className="page-card">
+          <div className={`page-card ${isDarkTheme ? "page-card-dark" : ""}`}>
             <h2>NOTES</h2>
             <p>
               To help you stay centered as you capture your thoughts, Andromeda
@@ -61,7 +63,7 @@ function Andromeda() {
         </div>
 
         <div className="page-card-div">
-          <div className="page-card">
+          <div className={`page-card ${isDarkTheme ? "page-card-dark" : ""}`}>
             <h2>TODO</h2>
             <p>
               Andromeda Todo module, a streamlined task manager designed to
@@ -82,7 +84,7 @@ function Andromeda() {
         </div>
 
         <div className="page-card-div">
-          <div className="page-card">
+          <div className={`page-card ${isDarkTheme ? "page-card-dark" : ""}`}>
             <h2>CALENDAR</h2>
             <p>
               Stay organized and inspired with this clean, intuitive calendar
@@ -104,7 +106,7 @@ function Andromeda() {
         </div>
 
         <div className="page-card-div">
-          <div className="page-card">
+          <div className={`page-card ${isDarkTheme ? "page-card-dark" : ""}`}>
             <h2>MINDMAP</h2>
             <p>
               Visualize your ideas with our intuitive Mindmap tool, designed to
@@ -120,7 +122,7 @@ function Andromeda() {
         </div>
 
         <div className="page-card-div">
-          <div className="page-card">
+          <div className={`page-card ${isDarkTheme ? "page-card-dark" : ""}`}>
             <h2>HOW TO INSTALL</h2>
             <p>
               Launch Andromeda on Google Chrome (preferable) from the button

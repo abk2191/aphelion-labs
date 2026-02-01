@@ -1,10 +1,10 @@
-function Homepage() {
+function Homepage({ isDarkTheme }) {
   return (
     <>
       <div className="banner"></div>
       <div className="page-cards-wrapper">
         <div className="page-card-div">
-          <div className="page-card">
+          <div className={`page-card ${isDarkTheme ? "page-card-dark" : ""}`}>
             <h2>👋 Welcome to iINTUIT Labs.</h2>
             <div className="margin-top-10">
               <p>
@@ -24,7 +24,7 @@ function Homepage() {
         </div>
 
         <div className="page-card-div">
-          <div className="page-card">
+          <div className={`page-card ${isDarkTheme ? "page-card-dark" : ""}`}>
             <h2>⚙️ Technologies</h2>
             <div className="margin-top-10">
               <p>
@@ -63,28 +63,36 @@ function Homepage() {
                   <div className="tech-wrapper">
                     <i
                       class="fa-brands fa-react"
-                      style={{ color: "midnightblue" }}
+                      style={{
+                        color: isDarkTheme ? "whitesmoke" : "midnightblue",
+                      }}
                     ></i>{" "}
                     <p>React</p>
                   </div>
                   <div className="tech-wrapper">
                     <i
                       class="fa-brands fa-js"
-                      style={{ color: "midnightblue" }}
+                      style={{
+                        color: isDarkTheme ? "whitesmoke" : "midnightblue",
+                      }}
                     ></i>
                     <p>JavaScript</p>
                   </div>
                   <div className="tech-wrapper">
                     <i
                       class="fa-brands fa-html5"
-                      style={{ color: "midnightblue" }}
+                      style={{
+                        color: isDarkTheme ? "whitesmoke" : "midnightblue",
+                      }}
                     ></i>
                     <p>HTML 5</p>
                   </div>
                   <div className="tech-wrapper">
                     <i
                       class="fa-brands fa-git-alt"
-                      style={{ color: "midnightblue" }}
+                      style={{
+                        color: isDarkTheme ? "whitesmoke" : "midnightblue",
+                      }}
                     ></i>
                     <p>Git</p>
                   </div>
@@ -93,28 +101,36 @@ function Homepage() {
                   <div className="tech-wrapper">
                     <i
                       class="fa-brands fa-python"
-                      style={{ color: "midnightblue" }}
+                      style={{
+                        color: isDarkTheme ? "whitesmoke" : "midnightblue",
+                      }}
                     ></i>
                     <p>Python</p>
                   </div>
                   <div className="tech-wrapper">
                     <i
                       class="fa-brands fa-java"
-                      style={{ color: "midnightblue" }}
+                      style={{
+                        color: isDarkTheme ? "whitesmoke" : "midnightblue",
+                      }}
                     ></i>
                     <p>Java</p>
                   </div>
                   <div className="tech-wrapper">
                     <i
                       class="fa-brands fa-docker"
-                      style={{ color: "midnightblue" }}
+                      style={{
+                        color: isDarkTheme ? "whitesmoke" : "midnightblue",
+                      }}
                     ></i>
                     <p>Docker</p>
                   </div>
                   <div className="tech-wrapper">
                     <i
                       class="fa-solid fa-globe"
-                      style={{ color: "midnightblue" }}
+                      style={{
+                        color: isDarkTheme ? "whitesmoke" : "midnightblue",
+                      }}
                     ></i>
                     <p>Full Stack</p>
                   </div>
@@ -125,7 +141,7 @@ function Homepage() {
         </div>
 
         <div className="page-card-div">
-          <div className="page-card">
+          <div className={`page-card ${isDarkTheme ? "page-card-dark" : ""}`}>
             <h2> 💭 Our vision</h2>
             <div className="margin-top-10">
               <p>

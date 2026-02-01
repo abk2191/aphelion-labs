@@ -1,4 +1,4 @@
-function ProximaCalculator() {
+function ProximaCalculator({ isDarkTheme }) {
   const handleClick = () => {
     window.open(
       "https://abk2191.github.io/react-calculator/",
@@ -9,12 +9,14 @@ function ProximaCalculator() {
   return (
     <>
       <div>
-        <div className="andromeda-banner">
+        <div
+          className={`andromeda-banner ${isDarkTheme ? "andromeda-banner-dark" : ""}`}
+        >
           <h1>Proxima Calculator.</h1>
         </div>
 
         <div className="page-card-div">
-          <div className="page-card">
+          <div className={`page-card ${isDarkTheme ? "page-card-dark" : ""}`}>
             <p>
               Meet the Proxima Calculator, a sleek and intuitive tool designed
               to make your daily calculations effortless. Its modern dark mode

@@ -867,6 +867,13 @@ html {
   box-shadow: 0.05em 0.05em #5566c2;
 }
 
+.theme-switcher {
+  border: none;
+  background: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
 /****************************DARK THEME***************************************/
 .navbar-dark {
   background-color: black;
@@ -917,6 +924,30 @@ html {
   border-top: 1px solid #1a1a1a;
 }
 
+.page-card-dark {
+  background-color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+}
+
+.page-card-dark p {
+  color: whitesmoke;
+}
+
+.page-card-dark h2 {
+  color: whitesmoke;
+}
+
+.footer-dark {
+  background-color: black;
+}
+
+.footer-dark p {
+  color: whitesmoke;
+}
+
+.andromeda-banner-dark h1 {
+  color: whitesmoke;
+}
 @media (max-width: 768px) {
   /* Styles for screens up to 768px wide (mobile) */
   .brand-name h3 {
