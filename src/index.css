@@ -872,6 +872,7 @@ html {
   background: none;
   font-size: 30px;
   cursor: pointer;
+  margin-left: 150px;
 }
 
 /****************************DARK THEME***************************************/
@@ -1093,5 +1094,9 @@ html {
 
   .how-to-install-div {
     justify-content: center;
+  }
+
+  .theme-switcher {
+    margin-left: 20px;
   }
 }
