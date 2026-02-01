@@ -24,6 +24,22 @@ function App() {
     setIsDarkTheme((prev) => !prev);
   }
 
+  useEffect(() => {
+    if (isDarkTheme) {
+      document.body.style.backgroundColor = "#121212"; // Dark background
+      document.body.style.color = "#ffffff"; // Light text
+    } else {
+      document.body.style.backgroundColor = "white";
+      document.body.style.color = "inherit";
+    }
+
+    // Cleanup function
+    return () => {
+      document.body.style.backgroundColor = "";
+      document.body.style.color = "";
+    };
+  }, [isDarkTheme]);
+
   // Toggle Sidebar Function
   const toggleSidebar = () => {
     if (!isSidebarOpen) {
