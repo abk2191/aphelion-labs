@@ -14,14 +14,23 @@ function App() {
   //***************************** LIFTED STATES  *******************************/
   const [isSidebarOpen, setIsSidebarOpen] = useState(false); //*****************/
   const [shouldRenderSidebar, setShouldRenderSidebar] = useState(false);
-  const [isDarkTheme, setIsDarkTheme] = useState(false); //*****/
+  const [isDarkTheme, setIsDarkTheme] = useState(() => {
+    const savedTheme = localStorage.getItem("isDarkTheme");
+    // If savedTheme exists and is "true", return true, else false
+    return savedTheme === "true" ? true : false;
+  }); //*****/
   //***************************** LIFTED STATES  *******************************/
   const hamburgerRef = useRef(null); //*****************************************/
   //****************************************************************************/
   //****************************************************************************/
 
   function handleThemeToggle() {
-    setIsDarkTheme((prev) => !prev);
+    setIsDarkTheme((prev) => {
+      const newTheme = !prev;
+      // Save to localStorage whenever theme changes
+      localStorage.setItem("isDarkTheme", newTheme.toString());
+      return newTheme;
+    });
   }
 
   useEffect(() => {
