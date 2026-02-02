@@ -178,7 +178,7 @@
 .toggle-button {
   background: none;
   border: none;
-  font-size: 18px;
+  font-size: 22px;
   cursor: pointer;
 }
 
@@ -967,6 +967,15 @@ html {
   box-shadow:
     0 10px 20px rgba(255, 255, 255, 0.05),
     0 6px 6px rgba(255, 255, 255, 0.03);
+}
+
+.arrow {
+  display: inline-block; /* required */
+  transition: transform 0.25s ease;
+}
+
+.arrow.rotate {
+  transform: rotate(180deg); /* or 90deg if you prefer */
 }
 @media (max-width: 768px) {
   /* Styles for screens up to 768px wide (mobile) */

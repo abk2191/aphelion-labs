@@ -102,11 +102,11 @@ function Sidebar({
               The UI Lab
             </p>
             <button className="toggle-button" onClick={() => toggleMenu("ui")}>
-              {menuVisibility === "ui" ? (
-                <i className="fa-solid fa-angle-up"></i>
-              ) : (
-                <i className="fa-solid fa-angle-down"></i>
-              )}
+              <i
+                className={`fa-solid fa-angle-down arrow ${
+                  menuVisibility === "ui" ? "rotate" : ""
+                }`}
+              />
             </button>
           </div>
 
@@ -164,11 +164,11 @@ function Sidebar({
               className="toggle-button"
               onClick={() => toggleMenu("contact")}
             >
-              {menuVisibility === "contact" ? (
-                <i className="fa-solid fa-angle-up"></i>
-              ) : (
-                <i className="fa-solid fa-angle-down"></i>
-              )}
+              <i
+                className={`fa-solid fa-angle-down arrow ${
+                  menuVisibility === "contact" ? "rotate" : ""
+                }`}
+              />
             </button>
           </div>
 
