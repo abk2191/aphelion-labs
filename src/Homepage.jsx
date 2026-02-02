@@ -1,10 +1,10 @@
-function Homepage({ isDarkTheme }) {
+function Homepage() {
   return (
     <>
       <div className="banner"></div>
       <div className="page-cards-wrapper">
         <div className="page-card-div">
-          <div className={`page-card ${isDarkTheme ? "page-card-dark" : ""}`}>
+          <div className="page-card">
             <h2>👋 Welcome to iINTUIT Labs.</h2>
             <div className="margin-top-10">
               <p>
@@ -24,7 +24,7 @@ function Homepage({ isDarkTheme }) {
         </div>
 
         <div className="page-card-div">
-          <div className={`page-card ${isDarkTheme ? "page-card-dark" : ""}`}>
+          <div className="page-card">
             <h2>⚙️ Technologies</h2>
             <div className="margin-top-10">
               <p>
@@ -33,105 +33,39 @@ function Homepage({ isDarkTheme }) {
               </p>
             </div>
             <div className="tech-stack-div">
-              {/* <div className="tech-stack">
-                <div style={{ color: "cyan" }}>
-                  <i class="fa-brands fa-react"></i>
-                  <p>React.js</p>
-                </div>
-                <div style={{ color: "gold" }}>
-                  <i class="fa-brands fa-js"></i>
-                  <p>Javascript</p>
-                </div>
-                <div style={{ color: "orange" }}>
-                  <i class="fa-brands fa-html5"></i>
-                  <p>HTML 5</p>
-                </div>
-              </div>
-
-              <div className="tech-stack">
-                <div style={{ color: "red" }}>
-                  <i class="fa-brands fa-git-alt"></i>
-                  <p style={{ textAlign: "center" }}>Git</p>
-                </div>
-                <div style={{ color: "navy" }}>
-                  <i class="fa-solid fa-globe"></i>
-                  <p>Full Stack</p>
-                </div>
-              </div> */}
               <div className="tech-stack-div-wrapper-wrapper">
                 <div className="tech-stack-div-one">
                   <div className="tech-wrapper">
-                    <i
-                      class="fa-brands fa-react"
-                      style={{
-                        color: isDarkTheme ? "whitesmoke" : "midnightblue",
-                      }}
-                    ></i>{" "}
-                    <p>React</p>
+                    <i className="fa-brands fa-react"></i> <p>React</p>
                   </div>
                   <div className="tech-wrapper">
-                    <i
-                      class="fa-brands fa-js"
-                      style={{
-                        color: isDarkTheme ? "whitesmoke" : "midnightblue",
-                      }}
-                    ></i>
+                    <i className="fa-brands fa-js"></i>
                     <p>JavaScript</p>
                   </div>
                   <div className="tech-wrapper">
-                    <i
-                      class="fa-brands fa-html5"
-                      style={{
-                        color: isDarkTheme ? "whitesmoke" : "midnightblue",
-                      }}
-                    ></i>
+                    <i className="fa-brands fa-html5"></i>
                     <p>HTML 5</p>
                   </div>
                   <div className="tech-wrapper">
-                    <i
-                      class="fa-brands fa-git-alt"
-                      style={{
-                        color: isDarkTheme ? "whitesmoke" : "midnightblue",
-                      }}
-                    ></i>
+                    <i className="fa-brands fa-git-alt"></i>
                     <p>Git</p>
                   </div>
                 </div>
                 <div className="tech-stack-div-two">
                   <div className="tech-wrapper">
-                    <i
-                      class="fa-brands fa-python"
-                      style={{
-                        color: isDarkTheme ? "whitesmoke" : "midnightblue",
-                      }}
-                    ></i>
+                    <i className="fa-brands fa-python"></i>
                     <p>Python</p>
                   </div>
                   <div className="tech-wrapper">
-                    <i
-                      class="fa-brands fa-java"
-                      style={{
-                        color: isDarkTheme ? "whitesmoke" : "midnightblue",
-                      }}
-                    ></i>
+                    <i className="fa-brands fa-java"></i>
                     <p>Java</p>
                   </div>
                   <div className="tech-wrapper">
-                    <i
-                      class="fa-brands fa-docker"
-                      style={{
-                        color: isDarkTheme ? "whitesmoke" : "midnightblue",
-                      }}
-                    ></i>
+                    <i className="fa-brands fa-docker"></i>
                     <p>Docker</p>
                   </div>
                   <div className="tech-wrapper">
-                    <i
-                      class="fa-solid fa-globe"
-                      style={{
-                        color: isDarkTheme ? "whitesmoke" : "midnightblue",
-                      }}
-                    ></i>
+                    <i className="fa-solid fa-globe"></i>
                     <p>Full Stack</p>
                   </div>
                 </div>
@@ -141,7 +75,7 @@ function Homepage({ isDarkTheme }) {
         </div>
 
         <div className="page-card-div">
-          <div className={`page-card ${isDarkTheme ? "page-card-dark" : ""}`}>
+          <div className="page-card">
             <h2> 💭 Our vision</h2>
             <div className="margin-top-10">
               <p>

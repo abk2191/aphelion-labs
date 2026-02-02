@@ -14,10 +14,10 @@ function App() {
   //***************************** LIFTED STATES  *******************************/
   const [isSidebarOpen, setIsSidebarOpen] = useState(false); //*****************/
   const [shouldRenderSidebar, setShouldRenderSidebar] = useState(false);
-  const [isDarkTheme, setIsDarkTheme] = useState(() => {
-    const savedTheme = localStorage.getItem("isDarkTheme");
-    // If savedTheme exists and is "true", return true, else false
-    return savedTheme === "true" ? true : false;
+  const [currentTheme, setCurrentTheme] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
+    // Return saved theme or default to "light"
+    return savedTheme || "light";
   }); //*****/
   //***************************** LIFTED STATES  *******************************/
   const hamburgerRef = useRef(null); //*****************************************/
@@ -25,29 +25,29 @@ function App() {
   //****************************************************************************/
 
   function handleThemeToggle() {
-    setIsDarkTheme((prev) => {
-      const newTheme = !prev;
+    setCurrentTheme((prevTheme) => {
+      const newTheme = prevTheme === "light" ? "dark" : "light";
       // Save to localStorage whenever theme changes
-      localStorage.setItem("isDarkTheme", newTheme.toString());
+      localStorage.setItem("theme", newTheme);
+      // Update the data-theme attribute on the document element
+      document.documentElement.setAttribute("data-theme", newTheme);
       return newTheme;
     });
   }
 
+  // Initialize theme on component mount
   useEffect(() => {
-    if (isDarkTheme) {
-      document.body.style.backgroundColor = "#121212"; // Dark background
-      document.body.style.color = "#ffffff"; // Light text
-    } else {
-      document.body.style.backgroundColor = "white";
-      document.body.style.color = "inherit";
-    }
+    // Set the initial theme on the document element
+    document.documentElement.setAttribute("data-theme", currentTheme);
 
-    // Cleanup function
-    return () => {
+    // Remove the old body style changes since CSS variables handle this now
+    const cleanup = () => {
       document.body.style.backgroundColor = "";
       document.body.style.color = "";
     };
-  }, [isDarkTheme]);
+
+    return cleanup;
+  }, []);
 
   // Toggle Sidebar Function
   const toggleSidebar = () => {
@@ -97,29 +97,23 @@ function App() {
           toggleSidebar={toggleSidebar}
           hamburgerRef={hamburgerRef}
           handleThemeToggle={handleThemeToggle}
-          isDarkTheme={isDarkTheme}
+          currentTheme={currentTheme}
         />
         <Sidebar
           isSidebarOpen={isSidebarOpen}
           shouldRenderSidebar={shouldRenderSidebar}
           onClose={handleCloseSidebar}
           hamburgerRef={hamburgerRef}
-          isDarkTheme={isDarkTheme}
+          currentTheme={currentTheme}
         />
 
         <Routes>
-          <Route path="/" element={<Homepage isDarkTheme={isDarkTheme} />} />
-          <Route
-            path="/andromeda"
-            element={<Andromeda isDarkTheme={isDarkTheme} />}
-          />
-          <Route
-            path="/proximacalculator"
-            element={<ProximaCalculator isDarkTheme={isDarkTheme} />}
-          />
+          <Route path="/" element={<Homepage />} />
+          <Route path="/andromeda" element={<Andromeda />} />
+          <Route path="/proximacalculator" element={<ProximaCalculator />} />
         </Routes>
 
-        <Footer isDarkTheme={isDarkTheme} />
+        <Footer />
       </div>
     </Router>
   );

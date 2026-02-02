@@ -6,10 +6,10 @@ function Sidebar({
   shouldRenderSidebar,
   onClose,
   hamburgerRef,
-  isDarkTheme,
+  currentTheme,
 }) {
   const sidebarRef = useRef(null);
-  const navigate = useNavigate(); // ADD THIS LINE - you imported but didn't call it
+  const navigate = useNavigate();
 
   const [menuVisibility, setMenuVisibility] = useState(null);
 
@@ -45,11 +45,16 @@ function Sidebar({
       const sidebarEl = sidebarRef.current;
       const hamburgerEl = hamburgerRef.current;
 
+      // Find the theme-switcher button in the document
+      const themeSwitcherEl = document.querySelector(".theme-switcher");
+
       if (
         sidebarEl &&
         !sidebarEl.contains(event.target) &&
         hamburgerEl &&
-        !hamburgerEl.contains(event.target)
+        !hamburgerEl.contains(event.target) &&
+        themeSwitcherEl &&
+        !themeSwitcherEl.contains(event.target)
       ) {
         // Trigger close animation
         sidebarEl.classList.remove("sidebar-open");
@@ -76,29 +81,18 @@ function Sidebar({
 
   return (
     <>
-      <div
-        ref={sidebarRef}
-        className={`sidebar ${isDarkTheme ? "sidebar-dark" : ""}`}
-      >
+      <div ref={sidebarRef} className="sidebar">
         <div className="brand-name-sidebar">
           <h3>
             <i className="fa-solid fa-flask"></i> iINTUIT Labs.
           </h3>
         </div>
 
-        <div
-          className={`divider-line ${isDarkTheme ? "divider-line-dark" : ""}`}
-        ></div>
+        <div className="divider-line"></div>
 
         <div className="sidebar-items">
           <div className="menu-item">
-            <p
-              onClick={() => toggleMenu("ui")}
-              style={{
-                color: isDarkTheme ? "whitesmoke" : "midnightblue",
-                cursor: "pointer",
-              }}
-            >
+            <p onClick={() => toggleMenu("ui")} style={{ cursor: "pointer" }}>
               The UI Lab
             </p>
             <button className="toggle-button" onClick={() => toggleMenu("ui")}>
@@ -110,15 +104,10 @@ function Sidebar({
             </button>
           </div>
 
-          <div className="dropdown" style={{ color: "midnightblue" }}>
+          <div className="dropdown">
             <div className={`items ${menuVisibility === "ui" ? "open" : ""}`}>
               {" "}
               <div className="menu-items">
-                {/* <img
-                  src="./andromeda.png"
-                  style={{ height: "30px", width: "30px" }}
-                />{" "} */}
-
                 <p
                   onClick={() => {
                     navigate("/andromeda");
@@ -131,11 +120,6 @@ function Sidebar({
                 </p>
               </div>{" "}
               <div className="menu-items">
-                {/* <img
-                  src="./calculator.png"
-                  style={{ height: "32px", width: "32px" }}
-                />{" "} */}
-
                 <p
                   onClick={() => {
                     navigate("/ProximaCalculator");
@@ -152,10 +136,7 @@ function Sidebar({
 
           <div className="menu-item">
             <p
-              style={{
-                color: isDarkTheme ? "whitesmoke" : "midnightblue",
-                cursor: "pointer",
-              }}
+              style={{ cursor: "pointer" }}
               onClick={() => toggleMenu("contact")}
             >
               Contact
@@ -172,7 +153,7 @@ function Sidebar({
             </button>
           </div>
 
-          <div className="dropdown" style={{ color: "midnightblue" }}>
+          <div className="dropdown">
             <div
               className={`items ${menuVisibility === "contact" ? "open" : ""}`}
             >

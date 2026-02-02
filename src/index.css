@@ -1,3 +1,61 @@
+/* CSS Variables for Theme Switching */
+:root {
+  /* Light Theme (default) */
+  --bg-primary: white;
+  --bg-secondary: white;
+  --bg-tertiary: white;
+  --bg-navbar: white;
+  --bg-sidebar: white;
+  --bg-footer: white;
+  --bg-page-card: white;
+  --bg-button: midnightblue;
+  --text-primary: midnightblue;
+  --text-secondary: #32327a;
+  --text-tertiary: whitesmoke;
+  --text-button: white;
+  --border-primary: rgb(235, 233, 233);
+  --border-secondary: rgb(235, 233, 233);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --icon-color: midnightblue;
+  --hamburger-color: midnightblue;
+  --banner-overlay: #0b1e3a;
+  --divider-color: rgb(235, 233, 233);
+}
+
+[data-theme="dark"] {
+  /* Dark Theme */
+  --bg-primary: #121212;
+  --bg-secondary: black;
+  --bg-tertiary: #1a1a1a;
+  --bg-navbar: black;
+  --bg-sidebar: black;
+  --bg-footer: black;
+  --bg-page-card: #1a1a1a;
+  --bg-button: midnightblue;
+  --text-primary: whitesmoke;
+  --text-secondary: whitesmoke;
+  --text-tertiary: whitesmoke;
+  --text-button: white;
+  --border-primary: #1a1a1a;
+  --border-secondary: #1a1a1a;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --icon-color: whitesmoke;
+  --hamburger-color: whitesmoke;
+  --banner-overlay: #000000;
+  --divider-color: #1a1a1a;
+}
+
+/* Apply theme variables to body */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
+  margin: 0;
+  padding: 0;
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
+}
+
 /* Remove highlight for all elements */
 * {
   -webkit-tap-highlight-color: transparent;
@@ -19,14 +77,14 @@
   background-image: url("/banner.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; /* 👈 full image visible */
-  background-color: #0b1e3a; /* fills empty space nicely */
+  background-size: cover;
+  background-color: var(--banner-overlay);
 }
 
 .banner img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* 👈 key change */
+  object-fit: contain;
   object-position: center;
 }
 
@@ -43,7 +101,6 @@
   gap: 8px;
   align-items: center;
   padding: 0;
-
   margin-left: 20px;
   position: relative;
   transition: transform 0.3s ease;
@@ -53,26 +110,16 @@
   display: block;
   width: 100%;
   height: 4px;
-  background-color: midnightblue;
+  background-color: var(--hamburger-color);
   border-radius: 4px;
   transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   transform-origin: center;
 }
 
-/* Hover Effects */
-/* .hamburger:hover {
-  transform: scale(1.1);
-} */
-
-/* .hamburger:hover span {
-  background-color: midnightblue;
-  box-shadow: 0 0 6px midnightblue;
-} */
-
 /* X Transformation when open */
 .hamburger.open span:nth-child(1) {
   transform: translateY(13px) rotate(45deg);
-  background-color: midnightblue;
+  background-color: var(--hamburger-color);
 }
 
 .hamburger.open span:nth-child(2) {
@@ -82,14 +129,8 @@
 
 .hamburger.open span:nth-child(3) {
   transform: translateY(-13px) rotate(-45deg);
-  background-color: midnightblue;
+  background-color: var(--hamburger-color);
 }
-
-/* Hover effect when open */
-/* .hamburger.open:hover span {
-  background-color: #000033;
-  box-shadow: 0 0 8px #000033;
-} */
 
 /* Base sidebar - starts hidden */
 .sidebar {
@@ -98,22 +139,19 @@
   left: 0;
   width: 300px;
   height: 100vh;
-  background: white;
-  color: white;
+  background: var(--bg-sidebar);
+  color: var(--text-tertiary);
   z-index: 20000;
-  /* Initial state - hidden */
   transform: translateX(-100%);
   opacity: 0;
   transition:
     transform 0.3s ease,
-    opacity 0.3s ease;
+    opacity 0.3s ease,
+    background-color 0.4s ease;
   margin-top: 81px;
-
-  border-top: 1px solid rgb(235, 233, 233);
-  border-right: 1px solid rgb(235, 233, 233);
+  border-top: 1px solid var(--divider-color);
+  border-right: 1px solid var(--divider-color);
   overflow-y: auto;
-
-  /* 🔑 VERY IMPORTANT */
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
 }
@@ -133,6 +171,7 @@
   font-size: 28px;
   margin: 0;
   padding: 0;
+  color: var(--text-primary);
 }
 
 .dropdown {
@@ -159,18 +198,11 @@
 .items p {
   font-family: "Montserrat", sans-serif !important;
   font-size: 20px;
+  color: var(--text-primary);
 }
-
-/* .calculator-menu-text {
-  font-size: 8px;
-}
-
-.andromeda-menu-text {
-  font-size: 20px;
-} */
 
 .items.open {
-  max-height: 300px; /* must be >= content height */
+  max-height: 300px;
   opacity: 1;
   transform: translateY(0);
 }
@@ -329,8 +361,8 @@
 }
 
 .navbar {
-  position: fixed; /* 👈 key change */
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  box-shadow: 0 3px 6px var(--shadow-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -339,17 +371,10 @@
   position: sticky;
   top: 0;
   width: 100%;
-  background: white;
+  background: var(--bg-navbar);
   transition:
     background-color 0.4s ease,
     box-shadow 0.4s ease;
-}
-
-body,
-html {
-  margin: 0;
-  padding: 0;
-  background-color: white;
 }
 
 .brand-name {
@@ -359,7 +384,7 @@ html {
 .brand-name h3 {
   font-family: "Inter", sans-serif;
   font-size: 30px;
-  color: midnightblue;
+  color: var(--text-primary);
   line-height: 1.6;
 }
 
@@ -370,7 +395,7 @@ html {
 .brand-name-sidebar h3 {
   font-family: "Inter", sans-serif;
   font-size: 18px;
-  color: midnightblue;
+  color: var(--text-primary);
   line-height: 1.6;
 }
 
@@ -390,8 +415,8 @@ html {
   align-items: center;
   justify-content: center;
   margin-top: 40px;
-  animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1s; /* don't forget to set a duration! */
+  animation: fadeInDown;
+  animation-duration: 1s;
   margin-bottom: 40px;
 }
 
@@ -400,11 +425,11 @@ html {
   max-width: 640px;
   width: 100%;
   text-align: center;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgb(235, 233, 233);
+  box-shadow: 0 3px 6px var(--shadow-color);
+  border: 1px solid var(--border-primary);
   padding: 20px;
   transition: transform 0.3s ease;
-  background-color: white;
+  background-color: var(--bg-page-card);
 }
 
 .page-card:active {
@@ -414,7 +439,7 @@ html {
 
 .page-card h2 {
   font-family: "Inter", sans-serif;
-  color: midnightblue;
+  color: var(--text-primary);
   font-size: 18px;
 }
 
@@ -422,7 +447,7 @@ html {
   font-family: "Montserrat", sans-serif;
   font-size: 17px;
   line-height: 1.7;
-  color: #32327a;
+  color: var(--text-secondary);
   text-align: left;
   letter-spacing: 0.01em;
   overflow-wrap: break-word;
@@ -432,7 +457,7 @@ html {
 }
 
 .page-card p + p {
-  margin-top: 0.9em; /* adjust: 0.75–1.2em */
+  margin-top: 0.9em;
 }
 
 .tech-stack {
@@ -487,8 +512,8 @@ html {
 .footer {
   height: 140px;
   width: 100%;
-  background-color: white;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  background-color: var(--bg-footer);
+  box-shadow: 0 8px 24px var(--shadow-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -496,7 +521,7 @@ html {
   text-align: center;
   font-size: 18px;
   font-family: "Inter", sans-serif;
-  color: midnightblue;
+  color: var(--text-primary);
 }
 
 .andromeda-banner {
@@ -508,7 +533,7 @@ html {
 
 .andromeda-banner h1 {
   font-family: "Inter", sans-serif;
-  color: midnightblue;
+  color: var(--text-primary);
 }
 
 .andromeda-description-wrapper {
@@ -547,8 +572,8 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow:
-    0 10px 20px rgba(0, 0, 0, 0.15),
-    0 6px 6px rgba(0, 0, 0, 0.1);
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
 }
 
 .andromeda-screenshot-proxima-one {
@@ -559,8 +584,8 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow:
-    0 10px 20px rgba(0, 0, 0, 0.15),
-    0 6px 6px rgba(0, 0, 0, 0.1);
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
 }
 
 .andromeda-screenshot-todo {
@@ -571,8 +596,8 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow:
-    0 10px 20px rgba(0, 0, 0, 0.15),
-    0 6px 6px rgba(0, 0, 0, 0.1);
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
 }
 
 .andromeda-screenshot-calendar {
@@ -583,8 +608,8 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow:
-    0 10px 20px rgba(0, 0, 0, 0.15),
-    0 6px 6px rgba(0, 0, 0, 0.1);
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
 }
 
 .andromeda-screenshot-mindmap {
@@ -595,8 +620,8 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow:
-    0 10px 20px rgba(0, 0, 0, 0.15),
-    0 6px 6px rgba(0, 0, 0, 0.1);
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
 }
 
 .andromeda-screenshot-mindmap-two {
@@ -608,8 +633,8 @@ html {
   background-position: center;
   background-color: white;
   box-shadow:
-    0 10px 20px rgba(0, 0, 0, 0.15),
-    0 6px 6px rgba(0, 0, 0, 0.1);
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
 }
 
 .andromeda-screenshot-notes-open {
@@ -620,8 +645,8 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow:
-    0 10px 20px rgba(0, 0, 0, 0.15),
-    0 6px 6px rgba(0, 0, 0, 0.1);
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
   background-color: white;
 }
 
@@ -633,8 +658,8 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow:
-    0 10px 20px rgba(0, 0, 0, 0.15),
-    0 6px 6px rgba(0, 0, 0, 0.1);
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
   background-color: white;
 }
 
@@ -647,8 +672,8 @@ html {
   background-position: center;
   background-color: white;
   box-shadow:
-    0 10px 20px rgba(0, 0, 0, 0.15),
-    0 6px 6px rgba(0, 0, 0, 0.1);
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
 }
 
 .andromeda-screenshot-calendar-two {
@@ -660,8 +685,8 @@ html {
   background-position: center;
   background-color: white;
   box-shadow:
-    0 10px 20px rgba(0, 0, 0, 0.15),
-    0 6px 6px rgba(0, 0, 0, 0.1);
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
 }
 
 .andromeda-description p {
@@ -669,7 +694,7 @@ html {
   margin: 0;
   padding: 0;
   line-height: 1.7;
-  color: #32327a;
+  color: var(--text-secondary);
   text-align: left;
   letter-spacing: 0.01em;
   overflow-wrap: break-word;
@@ -688,7 +713,7 @@ html {
 }
 
 .andromeda-page-heading h2 {
-  color: #32327a;
+  color: var(--text-secondary);
   font-family: "Inter", sans-serif;
 }
 
@@ -697,7 +722,7 @@ html {
   margin: 0;
   padding: 0;
   line-height: 1.7;
-  color: #32327a;
+  color: var(--text-secondary);
   text-align: left;
   letter-spacing: 0.01em;
   overflow-wrap: break-word;
@@ -729,8 +754,8 @@ html {
 
 /* From Uiverse.io by adamgiebl */
 .cssbuttons-io-button {
-  background: midnightblue;
-  color: white;
+  background: var(--bg-button);
+  color: var(--text-button);
   font-family: inherit;
   padding: 0.35em;
   padding-left: 1.2em;
@@ -816,13 +841,13 @@ html {
 }
 
 .divider-line {
-  border-top: 1px solid rgb(235, 233, 233);
+  border-top: 1px solid var(--divider-color);
 }
 
 /* From Uiverse.io by d4niz */
 .contactButton {
-  background: midnightblue;
-  color: white;
+  background: var(--bg-button);
+  color: var(--text-button);
   font-family: "Inter", sans-serif;
   padding: 0.45em;
   padding-left: 1em;
@@ -852,7 +877,6 @@ html {
   background-color: whitesmoke;
   color: midnightblue;
   border-radius: 0.7em;
-  /* box-shadow: 0.1em 0.1em 0.6em 0.2em #7a8cf3; */
   right: 0.3em;
   transition: all 0.3s;
 }
@@ -873,110 +897,25 @@ html {
   font-size: 30px;
   cursor: pointer;
   margin-left: 150px;
+  color: var(--icon-color);
 }
 
-/****************************DARK THEME***************************************/
-.navbar-dark {
-  background-color: black;
-  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.07);
+/* Update tech wrapper icons to use theme variables */
+.tech-wrapper i {
+  color: var(--icon-color);
 }
 
-.brand-name-dark h3 {
-  color: whitesmoke !important;
-}
-
-.hamburger-dark span {
-  background-color: whitesmoke;
-}
-
-.hamburger-dark.open span:nth-child(1) {
-  transform: translateY(13px) rotate(45deg);
-  background-color: whitesmoke;
-}
-
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-  transform: scaleX(0);
-}
-
-.hamburger-dark.open span:nth-child(3) {
-  transform: translateY(-13px) rotate(-45deg);
-  background-color: whitesmoke;
-}
-
-.sidebar-dark {
-  background-color: black;
-  border-top: 1px solid #1a1a1a;
-  border-right: 1px solid #1a1a1a;
-  box-shadow: 4px 0 15px rgba(255, 255, 255, 0.05);
-}
-
-.sidebar-dark h3 {
-  color: whitesmoke;
-}
-
-.sidebar-dark p {
-  color: whitesmoke;
-}
-
-.sidebar-dark .sidebar-items .menu-item p {
-  color: whitesmoke;
-}
-
-.divider-line-dark {
-  border-top: 1px solid #1a1a1a;
-}
-
-.page-card-dark {
-  background-color: #1a1a1a;
-  border: 1px solid #1a1a1a;
-  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.08);
-}
-
-.page-card-dark p {
-  color: whitesmoke;
-}
-
-.page-card-dark h2 {
-  color: whitesmoke;
-}
-
-.footer-dark {
-  background-color: black;
-  box-shadow: 0 -8px 24px rgba(255, 255, 255, 0.07);
-}
-
-.footer-dark p {
-  color: whitesmoke;
-}
-
-.andromeda-banner-dark h1 {
-  color: whitesmoke;
-}
-
-.andromeda-screenshot-notes,
-.andromeda-screenshot-proxima-one,
-.andromeda-screenshot-todo,
-.andromeda-screenshot-calendar,
-.andromeda-screenshot-mindmap,
-.andromeda-screenshot-mindmap-two,
-.andromeda-screenshot-notes-open,
-.andromeda-screenshot-proxima-two,
-.andromeda-screenshot-todo-open,
-.andromeda-screenshot-calendar-two {
-  box-shadow:
-    0 10px 20px rgba(255, 255, 255, 0.05),
-    0 6px 6px rgba(255, 255, 255, 0.03);
-}
-
+/* Update arrow icon */
 .arrow {
-  display: inline-block; /* required */
+  display: inline-block;
   transition: transform 0.25s ease;
+  color: var(--icon-color);
 }
 
 .arrow.rotate {
-  transform: rotate(180deg); /* or 90deg if you prefer */
+  transform: rotate(180deg);
 }
+
 @media (max-width: 768px) {
   /* Styles for screens up to 768px wide (mobile) */
   .brand-name h3 {
@@ -997,7 +936,7 @@ html {
 
   .page-card {
     height: 410px;
-    max-width: 300px; /* or 300px if you want tighter */
+    max-width: 300px;
     padding: 18px;
   }
 
@@ -1084,13 +1023,11 @@ html {
 
   .tech-stack-div-one {
     font-size: 20px;
-
     padding-left: 15px;
   }
 
   .tech-stack-div-two {
     font-size: 20px;
-
     padding-left: 15px;
   }
 
@@ -1102,23 +1039,6 @@ html {
     height: 150px !important;
     width: 150px !important;
   }
-
-  /* .step-one {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .step-two {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
-
-  /* .step-two img {
-    height: 150px !important;
-    width: 150px !important;
-  } */
 
   .how-to-install-div {
     justify-content: center;

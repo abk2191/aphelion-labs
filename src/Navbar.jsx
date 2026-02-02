@@ -5,13 +5,13 @@ function Navbar({
   toggleSidebar,
   hamburgerRef,
   handleThemeToggle,
-  isDarkTheme,
+  currentTheme,
 }) {
   return (
-    <div className={`navbar ${isDarkTheme ? "navbar-dark" : ""}`}>
+    <div className="navbar">
       <button
         ref={hamburgerRef}
-        className={`hamburger ${isSidebarOpen ? "open" : ""} ${isDarkTheme ? "hamburger-dark" : ""}`}
+        className={`hamburger ${isSidebarOpen ? "open" : ""}`}
         onClick={toggleSidebar}
         aria-label={isSidebarOpen ? "Close menu" : "Open menu"}
       >
@@ -20,16 +20,16 @@ function Navbar({
         <span></span>
       </button>
 
-      <button className="theme-switcher" onClick={() => handleThemeToggle()}>
-        {isDarkTheme ? (
-          <i className="fa-solid fa-sun" style={{ color: "whitesmoke" }}></i>
+      <button className="theme-switcher" onClick={handleThemeToggle}>
+        {currentTheme === "dark" ? (
+          <i className="fa-solid fa-sun"></i>
         ) : (
-          <i className="fa-solid fa-moon" style={{ color: "midnightblue" }}></i>
+          <i className="fa-solid fa-moon"></i>
         )}
       </button>
 
       <Link to="/" style={{ textDecoration: "none" }}>
-        <div className={`brand-name ${isDarkTheme ? "brand-name-dark" : ""}`}>
+        <div className="brand-name">
           <h3>
             <i className="fa-solid fa-flask"></i> iINTUIT Labs.
           </h3>

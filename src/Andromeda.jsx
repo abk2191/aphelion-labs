@@ -1,4 +1,4 @@
-function Andromeda({ isDarkTheme }) {
+function Andromeda() {
   const handleClick = () => {
     window.open(
       "https://abk2191.github.io/andromeda/notes",
@@ -9,14 +9,12 @@ function Andromeda({ isDarkTheme }) {
   return (
     <>
       <div>
-        <div
-          className={`andromeda-banner ${isDarkTheme ? "andromeda-banner-dark" : ""}`}
-        >
+        <div className="andromeda-banner">
           <h1>Andromeda.</h1>
         </div>
 
         <div className="page-card-div">
-          <div className={`page-card ${isDarkTheme ? "page-card-dark" : ""}`}>
+          <div className="page-card">
             <p>
               Andromeda is a thoughtful productivity space designed to help you
               find clarity and act with intention. <br /> <br />
@@ -42,7 +40,7 @@ function Andromeda({ isDarkTheme }) {
         </div>
 
         <div className="page-card-div">
-          <div className={`page-card ${isDarkTheme ? "page-card-dark" : ""}`}>
+          <div className="page-card">
             <h2>NOTES</h2>
             <p>
               To help you stay centered as you capture your thoughts, Andromeda
@@ -63,7 +61,7 @@ function Andromeda({ isDarkTheme }) {
         </div>
 
         <div className="page-card-div">
-          <div className={`page-card ${isDarkTheme ? "page-card-dark" : ""}`}>
+          <div className="page-card">
             <h2>TODO</h2>
             <p>
               Andromeda Todo module, a streamlined task manager designed to
@@ -84,7 +82,7 @@ function Andromeda({ isDarkTheme }) {
         </div>
 
         <div className="page-card-div">
-          <div className={`page-card ${isDarkTheme ? "page-card-dark" : ""}`}>
+          <div className="page-card">
             <h2>CALENDAR</h2>
             <p>
               Stay organized and inspired with this clean, intuitive calendar
@@ -93,7 +91,7 @@ function Andromeda({ isDarkTheme }) {
               focused monthly layout, switching between perspectives is seamless
               and simple. <br /> <br /> You can also easily add or view specific
               events with just a quick tap on any date and also get
-              notifications. We’ve focused on creating a clutter-free experience
+              notifications. We've focused on creating a clutter-free experience
               that helps you manage your time while leaving room for personal
               growth.
             </p>
@@ -106,7 +104,7 @@ function Andromeda({ isDarkTheme }) {
         </div>
 
         <div className="page-card-div">
-          <div className={`page-card ${isDarkTheme ? "page-card-dark" : ""}`}>
+          <div className="page-card">
             <h2>MINDMAP</h2>
             <p>
               Visualize your ideas with our intuitive Mindmap tool, designed to
@@ -122,7 +120,7 @@ function Andromeda({ isDarkTheme }) {
         </div>
 
         <div className="page-card-div">
-          <div className={`page-card ${isDarkTheme ? "page-card-dark" : ""}`}>
+          <div className="page-card">
             <h2>HOW TO INSTALL</h2>
             <p>
               Launch Andromeda on Google Chrome (preferable) from the button

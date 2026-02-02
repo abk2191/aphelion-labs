@@ -1,4 +1,4 @@
-function ProximaCalculator({ isDarkTheme }) {
+function ProximaCalculator() {
   const handleClick = () => {
     window.open(
       "https://abk2191.github.io/react-calculator/",
@@ -9,14 +9,12 @@ function ProximaCalculator({ isDarkTheme }) {
   return (
     <>
       <div>
-        <div
-          className={`andromeda-banner ${isDarkTheme ? "andromeda-banner-dark" : ""}`}
-        >
+        <div className="andromeda-banner">
           <h1>Proxima Calculator.</h1>
         </div>
 
         <div className="page-card-div">
-          <div className={`page-card ${isDarkTheme ? "page-card-dark" : ""}`}>
+          <div className="page-card">
             <p>
               Meet the Proxima Calculator, a sleek and intuitive tool designed
               to make your daily calculations effortless. Its modern dark mode
@@ -37,27 +35,9 @@ function ProximaCalculator({ isDarkTheme }) {
         </div>
 
         <div className="get-button">
-          {/* <button class="cssbuttons-io-button" onClick={handleClick}>
+          <button className="contactButton" onClick={handleClick}>
             Try Proxima Calculator
-            <div class="icon">
-              <svg
-                height="24"
-                width="24"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                  d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </div>
-          </button> */}
-
-          <button class="contactButton" onClick={handleClick}>
-            Try Proxima Calculator
-            <div class="iconButton">
+            <div className="iconButton">
               <svg
                 height="24"
                 width="24"

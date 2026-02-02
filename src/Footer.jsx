@@ -1,6 +1,6 @@
-function Footer({ isDarkTheme }) {
+function Footer() {
   return (
-    <div className={`footer ${isDarkTheme ? "footer-dark" : ""}`}>
+    <div className="footer">
       <p>&copy; Copyright All Rights Reserved 2025.</p>
       <p style={{ color: "gray", margin: "0" }}>
         <i className="fa-solid fa-globe"></i> Global
