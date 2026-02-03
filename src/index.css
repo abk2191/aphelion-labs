@@ -114,7 +114,9 @@ body {
   height: 4px;
   background-color: var(--hamburger-color);
   border-radius: 4px;
-  transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition:
+    all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6),
+    background-color 2s ease;
   transform-origin: center;
 }
 
