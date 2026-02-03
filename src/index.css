@@ -52,8 +52,8 @@ body {
   margin: 0;
   padding: 0;
   transition:
-    background-color 0.4s ease,
-    color 0.4s ease;
+    background-color 2s ease,
+    color 2s ease;
 }
 
 /* Remove highlight for all elements */
@@ -147,7 +147,8 @@ body {
   transition:
     transform 0.3s ease,
     opacity 0.3s ease,
-    background-color 0.4s ease;
+    background-color 2s ease,
+    border-color 2s ease;
   margin-top: 81px;
   border-top: 1px solid var(--divider-color);
   border-right: 1px solid var(--divider-color);
@@ -373,8 +374,8 @@ body {
   width: 100%;
   background: var(--bg-navbar);
   transition:
-    background-color 0.4s ease,
-    box-shadow 0.4s ease;
+    background-color 2s ease,
+    box-shadow 2s ease;
 }
 
 .brand-name {
@@ -428,8 +429,22 @@ body {
   box-shadow: 0 3px 6px var(--shadow-color);
   border: 1px solid var(--border-primary);
   padding: 20px;
-  transition: transform 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 2s ease,
+    border-color 2s ease,
+    box-shadow 2s ease; /* ← UPDATED LINE */
   background-color: var(--bg-page-card);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  transition:
+    background-color 2s ease,
+    color 2s ease,
+    border-color 2s ease,
+    box-shadow 2s ease; /* This will make ALL theme transitions slow */
 }
 
 .page-card:active {
