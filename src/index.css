@@ -103,7 +103,9 @@ body {
   padding: 0;
   margin-left: 20px;
   position: relative;
-  transition: transform 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 2s ease; /* Add slow theme transition */
 }
 
 .hamburger span {
