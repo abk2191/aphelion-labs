@@ -10,7 +10,7 @@ function Andromeda() {
     <>
       <div>
         <div className="andromeda-banner">
-          <h1>Andromeda.</h1>
+          <h1>Space.</h1>
         </div>
 
         <div className="page-card-div">
@@ -34,11 +34,6 @@ function Andromeda() {
           </div>
         </div>
 
-        <div className="andromeda-screenshot-wrapper">
-          <div className="andromeda-screenshot-notes"></div>
-          <div className="andromeda-screenshot-notes-open"></div>
-        </div>
-
         <div className="page-card-div">
           <div className="page-card">
             <h2>NOTES</h2>
@@ -56,13 +51,29 @@ function Andromeda() {
         </div>
 
         <div className="andromeda-screenshot-wrapper">
-          <div className="andromeda-screenshot-todo"></div>
-          <div className="andromeda-screenshot-todo-open"></div>
+          <div className="andromeda-screenshot-notes"></div>
+          <div className="andromeda-screenshot-notes-open"></div>
         </div>
+
+        {/* <div className="page-card-div">
+          <div className="page-card">
+            <h2>NOTES</h2>
+            <p>
+              To help you stay centered as you capture your thoughts, Andromeda
+              offers a beautifully simple space to organize your notes. <br />
+              <br />
+              You can easily prioritize your ideas by pinning or unpinning them,
+              ensuring your most important tasks always remain on track. <br />
+              <br /> To make the experience truly yours, you can also customize
+              your workspace with a variety of beautiful colors for a more
+              personal, intentional feel.
+            </p>
+          </div>
+        </div> */}
 
         <div className="page-card-div">
           <div className="page-card">
-            <h2>TODO</h2>
+            <h2>LISTS</h2>
             <p>
               Andromeda Todo module, a streamlined task manager designed to
               bring immediate clarity to your busy day. It features a bold,
@@ -77,8 +88,8 @@ function Andromeda() {
         </div>
 
         <div className="andromeda-screenshot-wrapper">
-          <div className="andromeda-screenshot-calendar"></div>
-          <div className="andromeda-screenshot-calendar-two"></div>
+          <div className="andromeda-screenshot-todo"></div>
+          <div className="andromeda-screenshot-todo-open"></div>
         </div>
 
         <div className="page-card-div">
@@ -99,8 +110,8 @@ function Andromeda() {
         </div>
 
         <div className="andromeda-screenshot-wrapper">
-          <div className="andromeda-screenshot-mindmap"></div>
-          <div className="andromeda-screenshot-mindmap-two"></div>
+          <div className="andromeda-screenshot-calendar"></div>
+          <div className="andromeda-screenshot-calendar-two"></div>
         </div>
 
         <div className="page-card-div">
@@ -117,6 +128,11 @@ function Andromeda() {
               controls that keep your map clear and accessible.
             </p>
           </div>
+        </div>
+
+        <div className="andromeda-screenshot-wrapper">
+          <div className="andromeda-screenshot-mindmap"></div>
+          <div className="andromeda-screenshot-mindmap-two"></div>
         </div>
 
         <div className="page-card-div">

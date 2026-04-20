@@ -116,7 +116,7 @@ function Sidebar({
                   style={{ cursor: "pointer" }}
                   className="andromeda-menu-text"
                 >
-                  Andromeda
+                  ✨ Space.
                 </p>
               </div>{" "}
               <div className="menu-items">
@@ -128,7 +128,7 @@ function Sidebar({
                   style={{ cursor: "pointer" }}
                   className="calculator-menu-text"
                 >
-                  Proxima Calculator
+                  ✨ Proxima Calculator
                 </p>
               </div>
             </div>
