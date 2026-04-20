@@ -1090,7 +1090,13 @@ body {
   }
 
   .andromeda-screenshot-proxima-one,
-  .andromeda-screenshot-proxima-two {
+  .andromeda-screenshot-proxima-two,
+  .andromeda-screenshot-proxima-three,
+  .andromeda-screenshot-proxima-four,
+  .andromeda-screenshot-proxima-five,
+  .andromeda-screenshot-proxima-six,
+  .andromeda-screenshot-proxima-seven,
+  .andromeda-screenshot-proxima-eight {
     width: 35%;
   }
 
