@@ -37,15 +37,17 @@ function ProximaCalculator() {
         <div className="page-card-div">
           <div className="page-card">
             <p>
-              Meet the Proxima Calculator, a sleek and intuitive tool designed
-              to make your daily calculations effortless. Its modern dark mode
-              interface provides a high-contrast, eye-straining-free experience
-              that is perfect for any lighting. You never have to worry about
-              losing your place, as the built-in history feature allows you to
-              review and track your previous results instantly. <br /> <br />
-              With a clean layout and responsive design, it handles everything
-              from simple sums to complex percentages with ease. We invite you
-              to experience a more organized way to manage your numbers today.
+              This sleek, dark-themed calculator offers a modern and intuitive
+              interface for handling everything from quick sums to nested
+              expressions with parentheses. With a dedicated history view, you
+              can easily track and reference your past calculations, such as the
+              result of $364 + 985$, ensuring you never lose your place. It
+              provides a seamless blend of efficiency and style, making complex
+              arithmetic feel effortless and organized. <br /> <br /> The app's
+              clean typography and high-contrast lime accents ensure that your
+              results remain perfectly legible at a glance. It strikes a
+              sophisticated balance between professional utility and minimalist
+              design.
             </p>
           </div>
         </div>
@@ -58,15 +60,16 @@ function ProximaCalculator() {
         <div className="page-card-div">
           <div className="page-card">
             <p>
-              Meet the Proxima Calculator, a sleek and intuitive tool designed
-              to make your daily calculations effortless. Its modern dark mode
-              interface provides a high-contrast, eye-straining-free experience
-              that is perfect for any lighting. You never have to worry about
-              losing your place, as the built-in history feature allows you to
-              review and track your previous results instantly. <br /> <br />
-              With a clean layout and responsive design, it handles everything
-              from simple sums to complex percentages with ease. We invite you
-              to experience a more organized way to manage your numbers today.
+              This versatile tool goes beyond simple arithmetic by offering
+              specialized calculation modes, including a dedicated Age
+              Calculator and a Percentage Calculator. With the Age Calculator,
+              you can instantly break down time into years, months, and days, or
+              even view your life milestones in total hours, minutes, and
+              seconds. <br /> <br /> Switching between these modes is effortless
+              thanks to a streamlined dropdown menu that keeps your workspace
+              organized and clutter-free. The interface maintains a consistent,
+              high-contrast aesthetic across all features, ensuring that complex
+              temporal data is as easy to read as a standard sum.
             </p>
           </div>
         </div>
@@ -79,15 +82,17 @@ function ProximaCalculator() {
         <div className="page-card-div">
           <div className="page-card">
             <p>
-              Meet the Proxima Calculator, a sleek and intuitive tool designed
-              to make your daily calculations effortless. Its modern dark mode
-              interface provides a high-contrast, eye-straining-free experience
-              that is perfect for any lighting. You never have to worry about
-              losing your place, as the built-in history feature allows you to
-              review and track your previous results instantly. <br /> <br />
-              With a clean layout and responsive design, it handles everything
-              from simple sums to complex percentages with ease. We invite you
-              to experience a more organized way to manage your numbers today.
+              The Percentage Calculator simplifies complex financial and
+              mathematical tasks by offering specialized tabs for direct
+              calculations, common phrases, and percentage differences. With the
+              Common Phrases feature, you can skip the mental formulas and
+              simply plug numbers into natural sentences like "12 is what % of
+              34" to get instant, precise results. <br /> <br />
+              The interface provides a clear breakdown of the underlying
+              equation, such as $12 / 34 \times 100$, so you always understand
+              the logic behind the final figure. This module turns a multi-step
+              math problem into a simple, one-click experience that fits
+              perfectly within your digital toolkit.
             </p>
           </div>
         </div>
