@@ -16,7 +16,7 @@ function Andromeda() {
         <div className="page-card-div">
           <div className="page-card">
             <p>
-              Andromeda is a thoughtful productivity space designed to help you
+              Space. is a thoughtful productivity space designed to help you
               find clarity and act with intention. <br /> <br />
               We’ve removed the typical digital noise and distractions, offering
               you a quiet environment to plan and stay focused—free from
@@ -24,12 +24,11 @@ function Andromeda() {
             </p>
             <br />
             <p>
-              With a modern, intuitive interface, Andromeda is built to be fast
-              and deeply respectful of your time. It is our goal to support
-              those who value structure and reliability above all else. <br />{" "}
-              <br />
-              Andromeda simply provides the steady tools you need to stay
-              centered and accomplish what matters most to you.
+              With a modern, intuitive interface, Space. is built to be fast and
+              deeply respectful of your time. It is our goal to support those
+              who value structure and reliability above all else. <br /> <br />
+              Space. simply provides the steady tools you need to stay centered
+              and accomplish what matters most to you.
             </p>
           </div>
         </div>
@@ -38,7 +37,7 @@ function Andromeda() {
           <div className="page-card">
             <h2>NOTES</h2>
             <p>
-              To help you stay centered as you capture your thoughts, Andromeda
+              To help you stay centered as you capture your thoughts, Space.
               offers a beautifully simple space to organize your notes. <br />
               <br />
               You can easily prioritize your ideas by pinning or unpinning them,
@@ -75,14 +74,14 @@ function Andromeda() {
           <div className="page-card">
             <h2>LISTS</h2>
             <p>
-              Andromeda Todo module, a streamlined task manager designed to
-              bring immediate clarity to your busy day. It features a bold,
-              intuitive interface that lets you organize your life into
-              distinct, color-coded categories with just a few taps. <br />{" "}
-              <br /> You can easily pin your most critical lists to the top of
-              your dashboard. Adding, completing, and managing individual tasks
-              is incredibly fluid, complete with visual strike-throughs to give
-              you that satisfying sense of progress.
+              Space. Todo module, a streamlined task manager designed to bring
+              immediate clarity to your busy day. It features a bold, intuitive
+              interface that lets you organize your life into distinct,
+              color-coded categories with just a few taps. <br /> <br /> You can
+              easily pin your most critical lists to the top of your dashboard.
+              Adding, completing, and managing individual tasks is incredibly
+              fluid, complete with visual strike-throughs to give you that
+              satisfying sense of progress.
             </p>
           </div>
         </div>
@@ -139,9 +138,9 @@ function Andromeda() {
           <div className="page-card">
             <h2>HOW TO INSTALL</h2>
             <p>
-              Launch Andromeda on Google Chrome (preferable) from the button
-              below and click on the ⋮ . Then click on "Add to home screen" then
-              tap "Install"
+              Launch Space. on Google Chrome (preferable) from the button below
+              and click on the ⋮ . Then click on "Add to home screen" then tap
+              "Install"
             </p>
             <div className="how-to-install-div">
               {/* <div className="step-one">
@@ -172,7 +171,7 @@ function Andromeda() {
 
         <div className="get-button">
           <button class="contactButton" onClick={handleClick}>
-            Try Andromeda
+            Try Space.
             <div class="iconButton">
               <svg
                 height="24"
