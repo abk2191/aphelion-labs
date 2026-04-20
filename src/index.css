@@ -607,6 +607,78 @@ body {
     0 6px 6px var(--shadow-color);
 }
 
+.andromeda-screenshot-proxima-three {
+  width: 20%;
+  aspect-ratio: 9 / 19.5;
+  background-image: url("/Screenshot_20260420_110756_Chrome.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow:
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
+}
+
+.andromeda-screenshot-proxima-four {
+  width: 20%;
+  aspect-ratio: 9 / 19.5;
+  background-image: url("/Screenshot_20260420_110831_Chrome.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow:
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
+}
+
+.andromeda-screenshot-proxima-five {
+  width: 20%;
+  aspect-ratio: 9 / 19.5;
+  background-image: url("/Screenshot_20260420_110927_Chrome.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow:
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
+}
+
+.andromeda-screenshot-proxima-six {
+  width: 20%;
+  aspect-ratio: 9 / 19.5;
+  background-image: url("/Screenshot_20260420_110902_Chrome.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow:
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
+}
+
+.andromeda-screenshot-proxima-seven {
+  width: 20%;
+  aspect-ratio: 9 / 19.5;
+  background-image: url("/Screenshot_20260420_110954_Chrome.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow:
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
+}
+
+.andromeda-screenshot-proxima-eight {
+  width: 20%;
+  aspect-ratio: 9 / 19.5;
+  background-image: url("/Screenshot_20260420_111007_Chrome.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow:
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
+}
+
 .andromeda-screenshot-todo {
   width: 20%;
   aspect-ratio: 9 / 19.5;

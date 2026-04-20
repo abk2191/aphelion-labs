@@ -34,6 +34,69 @@ function ProximaCalculator() {
           <div className="andromeda-screenshot-proxima-two"></div>
         </div>
 
+        <div className="page-card-div">
+          <div className="page-card">
+            <p>
+              Meet the Proxima Calculator, a sleek and intuitive tool designed
+              to make your daily calculations effortless. Its modern dark mode
+              interface provides a high-contrast, eye-straining-free experience
+              that is perfect for any lighting. You never have to worry about
+              losing your place, as the built-in history feature allows you to
+              review and track your previous results instantly. <br /> <br />
+              With a clean layout and responsive design, it handles everything
+              from simple sums to complex percentages with ease. We invite you
+              to experience a more organized way to manage your numbers today.
+            </p>
+          </div>
+        </div>
+
+        <div className="andromeda-screenshot-wrapper">
+          <div className="andromeda-screenshot-proxima-three"></div>
+          <div className="andromeda-screenshot-proxima-four"></div>
+        </div>
+
+        <div className="page-card-div">
+          <div className="page-card">
+            <p>
+              Meet the Proxima Calculator, a sleek and intuitive tool designed
+              to make your daily calculations effortless. Its modern dark mode
+              interface provides a high-contrast, eye-straining-free experience
+              that is perfect for any lighting. You never have to worry about
+              losing your place, as the built-in history feature allows you to
+              review and track your previous results instantly. <br /> <br />
+              With a clean layout and responsive design, it handles everything
+              from simple sums to complex percentages with ease. We invite you
+              to experience a more organized way to manage your numbers today.
+            </p>
+          </div>
+        </div>
+
+        <div className="andromeda-screenshot-wrapper">
+          <div className="andromeda-screenshot-proxima-five"></div>
+          <div className="andromeda-screenshot-proxima-six"></div>
+        </div>
+
+        <div className="page-card-div">
+          <div className="page-card">
+            <p>
+              Meet the Proxima Calculator, a sleek and intuitive tool designed
+              to make your daily calculations effortless. Its modern dark mode
+              interface provides a high-contrast, eye-straining-free experience
+              that is perfect for any lighting. You never have to worry about
+              losing your place, as the built-in history feature allows you to
+              review and track your previous results instantly. <br /> <br />
+              With a clean layout and responsive design, it handles everything
+              from simple sums to complex percentages with ease. We invite you
+              to experience a more organized way to manage your numbers today.
+            </p>
+          </div>
+        </div>
+
+        <div className="andromeda-screenshot-wrapper">
+          <div className="andromeda-screenshot-proxima-seven"></div>
+          <div className="andromeda-screenshot-proxima-eight"></div>
+        </div>
+
         <div className="get-button">
           <button className="contactButton" onClick={handleClick}>
             Try Proxima Calculator
