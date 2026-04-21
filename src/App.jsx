@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import Andromeda from "./Andromeda";
 import ProximaCalculator from "./ProximaCalculator";
 import KnowTheDeveloper from "./KnowTheDeveloper";
+import ScratchPad from "./ScratchPad";
 
 function App() {
   //****************************************************************************/
@@ -109,8 +110,18 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/andromeda" element={<Andromeda />} />
-          <Route path="/proximacalculator" element={<ProximaCalculator />} />
+          <Route
+            path="/andromeda"
+            element={<Andromeda currentTheme={currentTheme} />}
+          />
+          <Route
+            path="/proximacalculator"
+            element={<ProximaCalculator currentTheme={currentTheme} />}
+          />
+          <Route
+            path="/scratchpad"
+            element={<ScratchPad currentTheme={currentTheme} />}
+          />
         </Routes>
 
         <Footer />

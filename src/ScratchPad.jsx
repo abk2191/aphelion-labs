@@ -1,4 +1,4 @@
-function Andromeda({ currentTheme }) {
+function ScratchPad({ currentTheme }) {
   const handleClick = () => {
     window.open(
       "https://abk2191.github.io/andromeda/notes",
@@ -10,14 +10,11 @@ function Andromeda({ currentTheme }) {
     <>
       <div>
         <div className="andromeda-banner">
-          <img
-            src="./space-nobg.png"
-            style={{ height: "75px", width: "75px" }}
-          />
-          <h2>Space.</h2>
+          <img src="./sp-nobg.png" style={{ height: "75px", width: "75px" }} />
+          <h2>ScratchPad Native</h2>
         </div>
 
-        <div className="page-card-div">
+        {/* <div className="page-card-div">
           <div className="page-card">
             <p>
               Space. is a thoughtful productivity space designed to help you
@@ -56,7 +53,7 @@ function Andromeda({ currentTheme }) {
         <div className="andromeda-screenshot-wrapper">
           <div className="andromeda-screenshot-notes"></div>
           <div className="andromeda-screenshot-notes-open"></div>
-        </div>
+        </div> */}
 
         {/* <div className="page-card-div">
           <div className="page-card">
@@ -74,7 +71,7 @@ function Andromeda({ currentTheme }) {
           </div>
         </div> */}
 
-        <div className="page-card-div">
+        {/* <div className="page-card-div">
           <div className="page-card">
             <h2>LISTS</h2>
             <p>
@@ -88,9 +85,9 @@ function Andromeda({ currentTheme }) {
               satisfying sense of progress.
             </p>
           </div>
-        </div>
+        </div> */}
 
-        <div className="andromeda-screenshot-wrapper">
+        {/* <div className="andromeda-screenshot-wrapper">
           <div className="andromeda-screenshot-todo"></div>
           <div className="andromeda-screenshot-todo-open"></div>
         </div>
@@ -110,14 +107,14 @@ function Andromeda({ currentTheme }) {
               growth.
             </p>
           </div>
-        </div>
+        </div> */}
 
-        <div className="andromeda-screenshot-wrapper">
+        {/* <div className="andromeda-screenshot-wrapper">
           <div className="andromeda-screenshot-calendar"></div>
           <div className="andromeda-screenshot-calendar-two"></div>
-        </div>
+        </div> */}
 
-        <div className="page-card-div">
+        {/* <div className="page-card-div">
           <div className="page-card">
             <h2>MINDMAP</h2>
             <p>
@@ -131,14 +128,14 @@ function Andromeda({ currentTheme }) {
               controls that keep your map clear and accessible.
             </p>
           </div>
-        </div>
+        </div> */}
 
-        <div className="andromeda-screenshot-wrapper">
+        {/* <div className="andromeda-screenshot-wrapper">
           <div className="andromeda-screenshot-mindmap"></div>
           <div className="andromeda-screenshot-mindmap-two"></div>
-        </div>
+        </div> */}
 
-        <div className="page-card-div">
+        {/* <div className="page-card-div">
           <div className="page-card">
             <h2>HOW TO INSTALL</h2>
             <p>
@@ -147,17 +144,6 @@ function Andromeda({ currentTheme }) {
               "Install"
             </p>
             <div className="how-to-install-div">
-              {/* <div className="step-one">
-                <img
-                  src="./installation-step-one.jpg"
-                  alt=""
-                  style={{
-                    height: "250px",
-                    width: "250px",
-                    objectFit: "contain",
-                  }}
-                />
-              </div> */}
               <div className="step-two">
                 <img
                   src="./installation-step-two.jpg"
@@ -171,9 +157,9 @@ function Andromeda({ currentTheme }) {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="get-button">
+        {/* <div className="get-button">
           <button class="contactButton" onClick={handleClick}>
             Try Space.
             <div class="iconButton">
@@ -191,10 +177,10 @@ function Andromeda({ currentTheme }) {
               </svg>
             </div>
           </button>
-        </div>
+        </div> */}
       </div>
     </>
   );
 }
 
-export default Andromeda;
+export default ScratchPad;

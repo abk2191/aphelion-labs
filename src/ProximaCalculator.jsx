@@ -1,4 +1,4 @@
-function ProximaCalculator() {
+function ProximaCalculator({ currentTheme }) {
   const handleClick = () => {
     window.open(
       "https://abk2191.github.io/react-calculator/",
@@ -10,7 +10,12 @@ function ProximaCalculator() {
     <>
       <div>
         <div className="andromeda-banner">
-          <h1>Proxima Calculator.</h1>
+          <img
+            src="./proxima-nobg.png"
+            style={{ height: "75px", width: "75px" }}
+          />
+
+          <h2>Proxima Calculator</h2>
         </div>
 
         <div className="page-card-div">

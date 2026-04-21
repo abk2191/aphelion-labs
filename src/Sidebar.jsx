@@ -108,6 +108,11 @@ function Sidebar({
             <div className={`items ${menuVisibility === "ui" ? "open" : ""}`}>
               {" "}
               <div className="menu-items">
+                <img
+                  src="./space-nobg.png"
+                  style={{ height: "35px", width: "35px" }}
+                />
+
                 <p
                   onClick={() => {
                     navigate("/andromeda");
@@ -116,10 +121,15 @@ function Sidebar({
                   style={{ cursor: "pointer" }}
                   className="andromeda-menu-text"
                 >
-                  ✨ Space.
+                  Space.
                 </p>
               </div>{" "}
               <div className="menu-items">
+                <img
+                  src="./proxima-nobg.png"
+                  style={{ height: "35px", width: "35px" }}
+                />
+
                 <p
                   onClick={() => {
                     navigate("/ProximaCalculator");
@@ -128,19 +138,24 @@ function Sidebar({
                   style={{ cursor: "pointer" }}
                   className="calculator-menu-text"
                 >
-                  ✨ Proxima Calculator
+                  Proxima Calculator
                 </p>
               </div>
               <div className="menu-items">
+                <img
+                  src="./sp-nobg.png"
+                  style={{ height: "35px", width: "35px" }}
+                />
+
                 <p
                   onClick={() => {
-                    navigate("/ProximaCalculator");
+                    navigate("/ScratchPad");
                     onClose(); // Close sidebar after navigation
                   }}
                   style={{ cursor: "pointer" }}
                   className="calculator-menu-text"
                 >
-                  ✨ ScratchPad Native
+                  ScratchPad Native
                 </p>
               </div>
             </div>
