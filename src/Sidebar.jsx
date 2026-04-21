@@ -151,7 +151,7 @@ function Sidebar({
               style={{ cursor: "pointer" }}
               onClick={() => toggleMenu("contact")}
             >
-              📧 Contact
+              📧 &nbsp; Contact
             </p>
             <button
               className="toggle-button"
