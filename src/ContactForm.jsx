@@ -9,7 +9,7 @@ function ContactForm({ currentTheme }) {
   return (
     <>
       <div className="Contact-wrapper">
-        <h1>Contact.</h1>
+        <h3>Contact page coming soon.</h3>
       </div>
     </>
   );
