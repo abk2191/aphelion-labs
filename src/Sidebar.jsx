@@ -93,7 +93,7 @@ function Sidebar({
         <div className="sidebar-items">
           <div className="menu-item">
             <p onClick={() => toggleMenu("ui")} style={{ cursor: "pointer" }}>
-              The UI Lab
+              🧪 The UI Lab
             </p>
             <button className="toggle-button" onClick={() => toggleMenu("ui")}>
               <i
@@ -131,6 +131,18 @@ function Sidebar({
                   ✨ Proxima Calculator
                 </p>
               </div>
+              <div className="menu-items">
+                <p
+                  onClick={() => {
+                    navigate("/ProximaCalculator");
+                    onClose(); // Close sidebar after navigation
+                  }}
+                  style={{ cursor: "pointer" }}
+                  className="calculator-menu-text"
+                >
+                  ✨ ScratchPad Native
+                </p>
+              </div>
             </div>
           </div>
 
@@ -139,7 +151,7 @@ function Sidebar({
               style={{ cursor: "pointer" }}
               onClick={() => toggleMenu("contact")}
             >
-              Contact
+              📧 Contact
             </p>
             <button
               className="toggle-button"
