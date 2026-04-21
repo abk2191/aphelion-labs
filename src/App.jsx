@@ -8,6 +8,7 @@ import Andromeda from "./Andromeda";
 import ProximaCalculator from "./ProximaCalculator";
 import KnowTheDeveloper from "./KnowTheDeveloper";
 import ScratchPad from "./ScratchPad";
+import ContactForm from "./ContactForm";
 
 function App() {
   //****************************************************************************/
@@ -122,6 +123,7 @@ function App() {
             path="/scratchpad"
             element={<ScratchPad currentTheme={currentTheme} />}
           />
+          <Route path="/ContactForm" element={<ContactForm />} />
         </Routes>
 
         <Footer />

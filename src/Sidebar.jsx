@@ -185,7 +185,14 @@ function Sidebar({
               className={`items ${menuVisibility === "contact" ? "open" : ""}`}
             >
               <div className="menu-items">
-                <p>👋 Get in touch</p>
+                <p
+                  onClick={() => {
+                    navigate("/ContactForm");
+                    onClose(); // Close sidebar after navigation
+                  }}
+                >
+                  👋 Get in touch
+                </p>
               </div>
             </div>
           </div>

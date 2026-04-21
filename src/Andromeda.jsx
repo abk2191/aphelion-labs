@@ -174,9 +174,9 @@ function Andromeda({ currentTheme }) {
         </div>
 
         <div className="get-button">
-          <button class="contactButton" onClick={handleClick}>
+          <button className="contactButton" onClick={handleClick}>
             Try Space.
-            <div class="iconButton">
+            <div className="iconButton">
               <svg
                 height="24"
                 width="24"

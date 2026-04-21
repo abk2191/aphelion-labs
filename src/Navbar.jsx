@@ -24,7 +24,7 @@ function Navbar({
         {currentTheme === "dark" ? (
           <i className="fa-solid fa-sun"></i>
         ) : (
-          <i class="fa-solid fa-cloud-moon"></i>
+          <i className="fa-solid fa-cloud-moon"></i>
         )}
       </button>
 
