@@ -604,7 +604,31 @@ body {
 .andromeda-screenshot-proxima-one {
   width: 20%;
   aspect-ratio: 9 / 19.5;
-  background-image: url("/calculator-white.jpg");
+  background-image: url("/calculator-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow:
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
+}
+
+.scratchpad-banner-one {
+  width: 20%;
+  aspect-ratio: 9 / 19.5;
+  background-image: url("/scrhpad1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow:
+    0 10px 20px var(--shadow-color),
+    0 6px 6px var(--shadow-color);
+}
+
+.scratchpad-banner-two {
+  width: 20%;
+  aspect-ratio: 9 / 19.5;
+  background-image: url("/scrhpad2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -616,7 +640,7 @@ body {
 .andromeda-screenshot-proxima-three {
   width: 20%;
   aspect-ratio: 9 / 19.5;
-  background-image: url("/Screenshot_20260420_110756_Chrome.jpg");
+  background-image: url("/calc-hist-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -628,7 +652,7 @@ body {
 .andromeda-screenshot-proxima-four {
   width: 20%;
   aspect-ratio: 9 / 19.5;
-  background-image: url("/Screenshot_20260420_110831_Chrome.jpg");
+  background-image: url("/calc-hist-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -640,7 +664,7 @@ body {
 .andromeda-screenshot-proxima-five {
   width: 20%;
   aspect-ratio: 9 / 19.5;
-  background-image: url("/Screenshot_20260420_110927_Chrome.jpg");
+  background-image: url("/calc-modes.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -652,7 +676,7 @@ body {
 .andromeda-screenshot-proxima-six {
   width: 20%;
   aspect-ratio: 9 / 19.5;
-  background-image: url("/Screenshot_20260420_110902_Chrome.jpg");
+  background-image: url("/calc-age-calc.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -664,7 +688,7 @@ body {
 .andromeda-screenshot-proxima-seven {
   width: 20%;
   aspect-ratio: 9 / 19.5;
-  background-image: url("/Screenshot_20260420_110954_Chrome.jpg");
+  background-image: url("/calc-perc-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -676,7 +700,7 @@ body {
 .andromeda-screenshot-proxima-eight {
   width: 20%;
   aspect-ratio: 9 / 19.5;
-  background-image: url("/Screenshot_20260420_111007_Chrome.jpg");
+  background-image: url("/calc-perc-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -750,7 +774,7 @@ body {
 .andromeda-screenshot-proxima-two {
   width: 20%;
   aspect-ratio: 9 / 19.5;
-  background-image: url("/calculator-dark.jpg");
+  background-image: url("/calculator-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1102,7 +1126,9 @@ body {
   .andromeda-screenshot-proxima-five,
   .andromeda-screenshot-proxima-six,
   .andromeda-screenshot-proxima-seven,
-  .andromeda-screenshot-proxima-eight {
+  .andromeda-screenshot-proxima-eight,
+  .scratchpad-banner-one,
+  .scratchpad-banner-two {
     width: 35%;
   }
 

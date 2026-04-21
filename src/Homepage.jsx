@@ -19,6 +19,12 @@ function Homepage() {
                 platforms. Every product we build reflects our commitment to
                 clean design and practical innovation.
               </p>
+
+              <p>
+                We bridge the gap between complex backend architecture and
+                effortless front-end interaction, ensuring every application is
+                as robust as it is intuitive.
+              </p>
             </div>
           </div>
         </div>

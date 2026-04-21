@@ -1,7 +1,7 @@
 function ProximaCalculator({ currentTheme }) {
   const handleClick = () => {
     window.open(
-      "https://abk2191.github.io/react-calculator/",
+      "https://drive.google.com/file/d/1QxPWna90cRDv86XH5n52m4-3bIX7ttlb/view?usp=sharing",
       "_blank",
       "noopener,noreferrer",
     );
