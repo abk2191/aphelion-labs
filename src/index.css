@@ -1018,6 +1018,11 @@ body {
   padding-right: 3em;
 }
 
+.placeholder {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .iconButton {
   margin-left: 1em;
   position: absolute;

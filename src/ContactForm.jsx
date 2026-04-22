@@ -1,3 +1,5 @@
+import Contact from "./contact";
+
 function ContactForm({ currentTheme }) {
   const handleClick = () => {
     window.open(
@@ -49,6 +51,8 @@ function ContactForm({ currentTheme }) {
         <span className="about" style={{ marginTop: "30px", fontSize: "30px" }}>
           Contact us using the form below.
         </span>
+        <div className="placeholder"></div>
+        <Contact />
       </div>
     </>
   );
