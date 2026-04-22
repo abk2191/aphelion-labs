@@ -22,7 +22,7 @@ function ContactForm({ currentTheme }) {
         <div className="contact-banner"></div>
 
         <span className="about" style={{ marginTop: "50px" }}>
-          "Reach out to use to take your business online today. We deliver
+          "Reach out to us to take your business online today. We deliver
           trust."
         </span>
 
