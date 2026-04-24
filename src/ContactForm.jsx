@@ -52,7 +52,7 @@ function ContactForm({ currentTheme }) {
           Contact us using the form below.
         </span>
         <div className="placeholder"></div>
-        <Contact />
+        <Contact currentTheme={currentTheme} />
       </div>
     </>
   );

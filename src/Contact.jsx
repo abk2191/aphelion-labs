@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
-const Contact = () => {
+const Contact = ({ currentTheme }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -8,27 +8,6 @@ const Contact = () => {
   });
 
   const [status, setStatus] = useState("");
-
-  // Get theme from localStorage or system preference
-  const getInitialTheme = () => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) return savedTheme;
-    return window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
-  };
-
-  const [theme, setTheme] = useState(getInitialTheme);
-
-  // Apply theme to document
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
-  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -82,24 +61,6 @@ const Contact = () => {
 
   return (
     <div className="Contact-wrapper">
-      {/* Theme Switcher */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "flex-end",
-          width: "100%",
-          marginBottom: "20px",
-        }}
-      >
-        {/* <button
-          onClick={toggleTheme}
-          className="theme-switcher"
-          aria-label="Toggle theme"
-        >
-          {theme === "light" ? "🌙" : "☀️"}
-        </button> */}
-      </div>
-
       <p>Get in Touch</p>
 
       <form
@@ -259,12 +220,6 @@ const Contact = () => {
         className="divider-line"
         style={{ margin: "30px 0", width: "100%" }}
       ></div>
-
-      {/* <div className="about-services">
-        Or reach me directly at:
-        <br />
-        <strong>abhishek.kabi.21@gmail.com</strong>
-      </div> */}
     </div>
   );
 };
