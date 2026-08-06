@@ -92,7 +92,7 @@ function App() {
   //****************************************************************************/
 
   return (
-    <Router basename="/aphelion-labs">
+    <Router>
       <div className="app-container">
         <Navbar
           isSidebarOpen={isSidebarOpen}
