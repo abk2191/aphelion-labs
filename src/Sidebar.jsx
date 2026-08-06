@@ -108,10 +108,10 @@ function Sidebar({
             <div className={`items ${menuVisibility === "ui" ? "open" : ""}`}>
               {" "}
               <div className="menu-items">
-                <img
+                {/* <img
                   src="./space-nobg.png"
                   style={{ height: "35px", width: "35px" }}
-                />
+                /> */}
 
                 <p
                   onClick={() => {
@@ -121,10 +121,10 @@ function Sidebar({
                   style={{ cursor: "pointer" }}
                   className="andromeda-menu-text"
                 >
-                  Space.
+                  Coming soon...
                 </p>
               </div>{" "}
-              <div className="menu-items">
+              {/* <div className="menu-items">
                 <img
                   src="./proxima-nobg.png"
                   style={{ height: "35px", width: "35px" }}
@@ -140,8 +140,8 @@ function Sidebar({
                 >
                   Proxima Calculator
                 </p>
-              </div>
-              <div className="menu-items">
+              </div> */}
+              {/* <div className="menu-items">
                 <img
                   src="./sp-nobg.png"
                   style={{ height: "35px", width: "35px" }}
@@ -157,7 +157,7 @@ function Sidebar({
                 >
                   ScratchPad Native
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
 
